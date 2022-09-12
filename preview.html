@@ -1,0 +1,912 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+    <head>
+        <!-- Primary Meta Tags -->
+        <meta charset="utf-8">
+        <title>Earth Index Home</title>
+        <meta name="title" content="Earth Index">
+        <meta name="description" content="The Earth Index reports the contributions countries make to
+                                        the well-being of our planet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+            content="Impact Investing, ESG, SDG, Earth Index, Contributions, well-being, planetary well-being">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="30 days">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://earth-index.info">
+        <meta property="og:title" content="Earth Index">
+        <meta property="og:description" content="The Earth Index reports the contributions countries make to
+                                        the well-being of our planet">
+        <meta property="og:image" content="img/Earth-Index-Color.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://earth-index.info">
+        <meta property="twitter:title" content="Earth Index">
+        <meta property="twitter:description" content="The Earth Index reports the contributions countries make to
+                                        the well-being of our planet">
+        <meta property="twitter:image" content="img/Earth-Index-Color.png">
+
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="img/Earth-Index-Color.png">
+        <link rel="icon" href="img/Earth-Index-Color.png" type="image/x-icon">
+        <!-- Place favicon.ico in the root directory -->
+
+        <!-- <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css"> -->
+        <link rel="stylesheet" href="css/w3.css">
+        <meta name="theme-color" content="#fafafa">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+        <!--javascript-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    </head>
+
+    <body onload="openFooter()">
+        <!-- Sidebar -->
+        <nav aria-label="primary">
+            <div class="w3-sidebar nav-sidebar w3-opacity-min w3-white" id="mySidebar" onmouseleave="closeNav()">
+                <p></p>
+                <p></p>
+                <!-- <a href="javascript:void(0)" class="nav-closebtn w3-bar-item">×</a> -->
+                <a href="#EarthIndex" class="w3-border-black w3-leftbar w3-bar-item menu-item">Earth Index</a>
+                <a class="w3-border-bottom w3-border-black w3-white w3-leftbar w3-bar-item menu-description">What is the
+                    Earth Index and how do countries contribute to the well-being of our planet?</a>
+                <a href="#Contributions" class="w3-border-grey w3-leftbar w3-bar-item menu-item">Contributions</a>
+                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">What were
+                    the
+                    contributions that countries made to the well-being of our planet?</a>
+                <a href="#Performance" class="w3-border-black w3-leftbar w3-bar-item menu-item">Performance</a>
+                <a class="w3-border-bottom w3-border-black w3-white w3-leftbar w3-bar-item menu-description">What is the
+                    short-term,
+                    medium-term, and long-term performance of countries in their contributions to the well-being of our
+                    planet?
+                </a>
+                <a href="#GetInvolved" class="w3-border-grey w3-leftbar w3-bar-item menu-item">Get Involved</a>
+                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">How can you
+                    get involved
+                    in contributing to the well-being of our planet? </a>
+                <p></p>
+                <p></p>
+                <a class="w3-display-bottommiddle" href="#Home"><img float=left src="img/Earth-Index-Color.png"
+                        height="60px" alt="Earth Index"></a>
+            </div>
+        </nav>
+        <!-- End Sidebar -->
+
+        <!-- Header -->
+        <!-- Navbar (Sits on top right) -->
+        <header>
+            <div class="w3-display-topright w3-cell w3-mobile w3-opacity-min">
+                <button class="nav-openbtn nav-button w3-opacity-min" type="button" onmouseover="openNav()"
+                    id="closedButton">☰</button>
+            </div>
+        </header>
+        <script>
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                // document.getElementById("content").style.marginRight = "250px";
+                document.getElementById("closedButton").style.display = "none";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                // document.getElementById("content").style.marginRight = "0";
+                document.getElementById("closedButton").style.display = "block";
+
+            }
+        </script>
+        <!-- End Header -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="w3-footer w3-display-bottommiddle w3-card-4 w3-white w3-row-padding w3-hide-small w3-mobile"
+                id="myFooter" onmouseleave="closeFooter()">
+                <div class="w3-container w3-cell w3-left w3-top">
+                    <a href="#Home"><img float="right" src="img/Earth-Index-Color.png" height="60px"
+                            alt="Earth Index"></a>
+                </div>
+                <div class="w3-container w3-right w3-margin-top w3-margin-right">
+                    <span class="title"><span class="strongtitle">I</span>ndex of
+                        <span class="strongtitle">C</span>ontributions to the well-being of our
+                        <span class="strongtitle">P</span>lanet</span>
+                </div>
+            </div>
+
+            <div class="w3-display-bottommiddle w3-mobile w3-opacity-min">
+                <button class="w3-footer-openbtn w3-footer-button w3-opacity-min" type="button"
+                    onmouseover="openFooter()" id="closedFooter"> </button>
+            </div>
+        </footer>
+        <script>
+            function openFooter() {
+                document.getElementById("myFooter").style.height = "80px";
+                // document.getElementById("content").style.marginTop = "250px";
+                document.getElementById("closedFooter").style.display = "none";
+            }
+
+            function closeFooter() {
+                document.getElementById("myFooter").style.height = "0";
+                // document.getElementById("content").style.marginTop = "200";
+                document.getElementById("closedFooter").style.display = "block";
+
+            }
+        </script>
+        <!-- End Footer -->
+
+        <!-- Content -->
+        <!--Home Page-->
+        <main>
+            <div class="w3-wrapper w3-mobile" id="#content">
+                <article>
+                    <div class="w3-wrapper" id="Home">
+                        <div class="w3-video w3-cell w3-mobile">
+                            <video class="w3-video" loop autoplay muted id="earth">
+                                <source src="img/earth.mp4">
+                            </video>
+                            <!-- Carousel -->
+                            <div class="w3-carousel-wrapper">
+                                <section class="w3-carousel" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide1" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <h2><i>Humanity cannot thrive and succeed without the well-being of our
+                                                    planet</i>
+                                            </h2>
+                                        </li>
+                                        <li id="carousel__slide2" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <h2><i>Investing in the well-being of our planet ensures our well-being and
+                                                    future</i></h2>
+                                        </li>
+                                        <li id="carousel__slide3" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <h2><i>Countries recognizing their contributions invest in the well-being of
+                                                    our
+                                                    planet</i></h2>
+                                        </li>
+                                        <li id="carousel__slide4" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <h2><i>Your showing up aligns your country to recognize the well-being of
+                                                    our
+                                                    planet</i></h2>
+                                        </li>
+                                    </ol>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Earth Index -->
+                <article>
+                    <div class="w3-row w3-padding w3-margin-left w3-margin-right w3-auto-top" id="EarthIndex">
+                        <div class="w3-container w3-card-4 w3-white w3-margin w3-padding w3-animate-zoom">
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>What is the Earth Index?</h1>
+                                <p class="subheading">The Earth Index reports the contributions countries make to
+                                    the well-being of our planet.
+                                </p>
+                            </div>
+                            <div class="w3-row-padding w3-twothird w3-cell w3-mobile">
+                                <div class="w3-image-wrapper w3-card-4">
+                                    <img src="img/img-1.webp">
+                                </div>
+                                <p class="p-subtitle">Protecting our economic and human well-being</p>
+                                <p>We are living in an era where global lockdown due to the pandemic, the climate
+                                    emergency, and the increasing
+                                    "black-swan" events threaten economic and human well-being. These symptoms of
+                                    the breakdown of the well-being
+                                    of our planet are ever increasing in diversity and magnitude. We have been
+                                    reporting the spread of the pandemic,
+                                    carbon emissions,water shortages and scarcities, energy statistics, material
+                                    statistics, etc. to report the <i>harm</i>
+                                    that we cause to our planet. Much of this harm is justified as the need for
+                                    human progress.</p>
+                                <p>Nasdaq, DOW 30, S&P 500, Euronext 100, Nikkei 225,
+                                    BSE Sensex, Hang Seng Index,
+                                    Shenzhen Index, GDP, and HDI are some of the Indexes we use to report our
+                                    contributions to economic or human well-being and progress.
+                                </p>
+                                <p>In the absence of reporting our contributions to the well-being of our
+                                    planet, we do not recognize them or act to increase them.
+                                    If we do not recognize or act on our contributions or increase them, we fail to
+                                    ensure the well-being of our planet. If we fail to ensure
+                                    the well-being of our planet, we will fail to protect our investments, to ensure
+                                    our economic or human well-being.
+                                </p>
+                                <p class="p-subtitle">Protecting the well-being of our planet</p>
+                                <p>There is, therefore, a need to report the good we do for the well-being of the
+                                    planet. There is a need to reinforce the good.</p>
+                                <p>The Earth Index addresses that need to allow us to recognize, value, and improve
+                                    the contributions we make to the well-being of our planet. We contribute to
+                                    the well-being of our planet through the interactions we have with each
+                                    other, with other life forms, with
+                                    ecosystems, and with the human designed systems and organizations in our
+                                    country. </p>
+                                <p>The Earth Index reports the contributions that the people of a country,
+                                    together, make to the
+                                    well-being
+                                    of the planet.
+                                </p>
+                                <p class="p-subtitle">The conversations we have shape our world</p>
+                                <p>The Earth Index provides us a means to
+                                    engage
+                                    in a conversation of contribution,
+                                    not environmental destruction.
+                                <p>
+                                    It provides a <i>common purpose</i> of ensuring the well-being of our planet,
+                                    not a short-sighted purpose of exploiting our planet at the cost of planetary
+                                    well-being. It gives peace a new meaning moving it from the peace of security to
+                                    the security of well-being.
+                                </p>
+                                <p>By reporting the contributions countries make to well-being of our planet, we
+                                    create
+                                    conversations to find directions for
+                                    better interactions with each other, other species, with our ecosystems, and
+                                    with organizations and systems of our design.</p>
+                                <p>The ability to recognize our contributions to the well-being of our planet
+                                    is a a proactive way to
+                                    manage
+                                    risk. It provides us a means to expand our ESG
+                                    (Environment, Sustainability, and Governance) frameworks to include the
+                                    well-being
+                                    of our planet and a sustainable means to impact investing.
+                                </p>
+                                <p>By encouraging countries to contribute to the well-being of our planet, we also
+                                    protect the return on our
+                                    investments by ensuring both: human well-being and economic well-being.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- Contributions -->
+                <article>
+                    <div class="w3-row w3-padding w3-margin-left w3-margin-right w3-auto-top" id="Contributions">
+                        <div class="w3-container w3-card-4 w3-white w3-margin w3-padding w3-animate-zoom">
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>The Earth Index</h1>
+                                <p class="subheading">The contributions countries made to the well-being
+                                    of our planet
+                                </p>
+                            </div>
+                            <div class="w3-row-padding w3-cell w3-twothird w3-mobile">
+                                <div class="w3-card-4 w3-iframe-container">
+                                    <iframe title="The Earth Index"
+                                        src="graphs/Contributions of different continents and countries to the well-being of our planet.html">Graph</iframe>
+                                </div>
+                                <p class="subtitle">The Earth Index reports contributions countries made to the
+                                    well-being
+                                    of
+                                    our planet. Countries contribute to
+                                    the well-being of our planet through the interactions its people have with each
+                                    other,
+                                    with
+                                    other life forms, with
+                                    ecosystems, and with the human designed systems and organizations. Here is
+                                    an overview of the contributions 67 countries, where data was
+                                    available from 1992 to 2019, made towards the well-being of our planet. Africa and
+                                    Asia contribute more than the rest of the
+                                    world
+                                    put
+                                    together. </p>
+                            </div>
+
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>Interactions that Contribute to the Well-being of Our Planet</h1>
+                                <p class="subheading">While there are many ways in which it may be possible to
+                                    score the interactions people have with each other, with
+                                    other life forms, with
+                                    ecosystems, and with the human designed systems and organizations
+                                    in each country, those that are simple, intuitive, do not require
+                                    long studies, experts, or lots of data help us recognize contributions
+                                    easily and respond to them
+                                </p>
+                            </div>
+                            <div class="w3-row-padding w3-cell w3-twothird w3-mobile">
+                                <div class="w3-section w3-half">
+
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img title="Interactions with each-other" class="w3-card-image"
+                                                    src="img/img-2.jpg">
+                                                <h6>Interactions with each-other</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with each-other</h6>
+                                                <p>Interactions that
+                                                    enable the people in a country
+                                                    to participate in interactions with each other without any threats,
+                                                    violence, or need to seek out other lands for their need to interact
+                                                    with
+                                                    each other,
+                                                    contribute to the well-being of our planet.
+                                                </p>
+                                                <p>The more the proportion of people who do not seek interaction with
+                                                    other people in other lands, the more they contribute to the
+                                                    well-being
+                                                    of
+                                                    our planet.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="w3-card-image" title="Interactions with other species"
+                                                    src="img/img-3.jpg">
+                                                <h6>Interactions with other species</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with other species</h6>
+                                                <p>Interactions that leave space for other species - and show restraint
+                                                    in occupying all the land, air, and water in our country -
+                                                    contribute
+                                                    to the well-being of our planet.
+                                                </p>
+                                                <p>The more the space that a country leaves for other species, the more
+                                                    it
+                                                    contributes to the well-being of our planet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-section w3-half">
+
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="w3-card-image" title="Interactions with ecosystems"
+                                                    src="img/img-4.jpg" alt="Avatar">
+                                                <h6>Interactions with ecosystems</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with ecosystems</h6>
+                                                <p>Interactions that show restraint and reduce the aggression caused by
+                                                    exploitation, encroachment, and
+                                                    pollution
+                                                    on every unit of land, contribute to the well-being of our planet.
+                                                </p>
+                                                <p>The less the exploitation, encroachment, or pollution per unit of
+                                                    land in
+                                                    a
+                                                    country, the more
+                                                    it contributes to the
+                                                    well-being of our planet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="w3-card-image"
+                                                    title="Interactions with human designed systems" src="img/img-5.jpg"
+                                                    alt="Avatar">
+                                                <h6>Interactions with human designed systems</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with human designed systems</h6>
+                                                <p>Interactions with the systems and organizations that the people of a
+                                                    country
+                                                    have created to provide them to live peaceful,
+                                                    healthy lives ensure inclusion and performance - their governments,
+                                                    businesses, and non-governmental
+                                                    organizations - contribute to the well-being of our planet.
+                                                </p>
+                                                <p>The better the interactions of the people with the systems and
+                                                    organizations
+                                                    that they
+                                                    have created, the longer they live.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>The 20 Biggest and Lowest Contributors</h1>
+                                <p class="subheading">The interactions its people have with each other, with
+                                    other life forms, with
+                                    ecosystems, and with the human designed systems and organizations
+                                    have contributed to the scores of the biggest contributors
+                                </p>
+                            </div>
+                            <div class="w3-row-padding w3-cell w3-twothird w3-mobile">
+
+                                <section class="w3-carousel-wide w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide5" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <div class="w3-iframe-container">
+                                                <iframe title="Earth Index for 20 biggest contributors in 1992"
+                                                    src="graphs/Earth Index for 20 highest contributors in 1992.html">Graph</iframe>
+                                            </div>
+                                        </li>
+                                        <li id="carousel__slide6" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <div class="w3-iframe-container">
+                                                <iframe title="Earth Index for 20 biggest contributors in 2019"
+                                                    src="graphs/Earth Index for 20 highest contributors in 2019.html">Graph</iframe>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section class="w3-carousel w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide7" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 biggest contributors in 1992"
+                                                src="graphs/TOP 20 BIGGEST CONTRIBUTORS TO PLANETARY WELL-BEING IN 1992.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide8" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 biggest contributors in 2019"
+                                                src="graphs/TOP 20 BIGGEST CONTRIBUTORS TO PLANETARY WELL-BEING IN 2019.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section class="w3-carousel w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide9" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 biggest contributors in 1992"
+                                                src="tables/Scores of 20 BIGGEST contributors for 1992.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide10" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 biggest contributors in 2019"
+                                                src="tables/Scores of 20 BIGGEST contributors for 2019.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                    </ol>
+                                </section>
+                                <p></p>
+
+                                <section class="w3-carousel-wide w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide11" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <div class="w3-iframe-container">
+                                                <iframe title="Earth Index for 20 lowest contributors in 1992"
+                                                    src="graphs/Earth Index for lowest contributors in 1992.html">Graph</iframe>
+                                            </div>
+                                        </li>
+                                        <li id="carousel__slide12" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <div class="w3-iframe-container">
+                                                <iframe title="Earth Index for 20 lowest contributors in 2019"
+                                                    src="graphs/Earth Index for lowest contributors in 2019.html">Graph</iframe>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section class="w3-carousel w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide13" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 lowest contributors in 1992"
+                                                src="graphs/BOTTOM 20 LOWEST CONTRIBUTORS TO PLANETARY WELL-BEING IN 1992.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide14" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 lowest contributors in 2019"
+                                                src="graphs/BOTTOM 20 LOWEST CONTRIBUTORS TO PLANETARY WELL-BEING IN 2019.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section class="w3-carousel w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide15" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 lowest contributors in 1992"
+                                                src="tables/Scores of 20 LEAST contributors for 1992.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide16" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 lowest contributors in 2019"
+                                                src="tables/Scores of 20 LEAST contributors for 2019.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                    </ol>
+                                </section>
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                <!-- Performance -->
+                <article>
+                    <div class="w3-row w3-padding w3-margin-left w3-margin-right w3-auto-top" id="Performance">
+                        <div class="w3-container w3-card-4 w3-white w3-margin w3-padding w3-animate-zoom">
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>Performance of Countries</h1>
+                                <p class="subheading">The actions, policies and culture of a country translate into its
+                                    performance
+                                    in the short-term, medium-term, and long-term in contributing to the well-being of
+                                    our
+                                    planet
+                                </p>
+                            </div>
+                            <div class="w3-row-padding w3-cell w3-twothird w3-mobile">
+                                <div class="w3-image-wrapper w3-card-4">
+                                    <img title="Performance of Countries in Contributing to the Well-being of Our Planet"
+                                        src="img/img-6.jpg">
+                                </div>
+                                <p class="subtitle">The decisions and actions of the people and organizations in a
+                                    country
+                                    influence
+                                    the contributions the country makes to the well-being of our planet in the
+                                    short-term.
+                                    As
+                                    decisions
+                                    and actions change from year-to-year, the short-term contributions are affected.
+                                </p>
+                                <p>The policies practices in a country influence the contributions the country makes to
+                                    the
+                                    well-being of
+                                    our planet in the medium-term. Policies change more slowly than actions and
+                                    decisions.
+                                    They
+                                    also alter the
+                                    actions and decisions driven by the policy for a longer time-frame. Policies,
+                                    therefore,
+                                    influence the contributions of
+                                    a country over a longer-term.
+                                </p>
+                                <p>The culture in a country drives the contributions it makes to the well-being
+                                    of
+                                    our
+                                    planet in the
+                                    long-term.
+                                    Cultures last long and can provide resilience to the contributions made
+                                    by a
+                                    country to the well-being
+                                    of our planet. They can also ensure the policies and actions move the contributions
+                                    of the country
+                                    in the same direction.</p>
+
+                            </div>
+
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>Interactions that Change How Countries Perform </h1>
+                                <p class="subheading">The actions, policies, and culture that drive the interactions
+                                    people
+                                    have
+                                    with each other, with
+                                    other life forms, with
+                                    ecosystems, and with the human designed systems and organizations
+                                    in each country, alter a countries performance in the short, medium, and long-term
+                                </p>
+                            </div>
+                            <div class="w3-row-padding w3-cell w3-twothird w3-mobile">
+                                <div class="w3-section w3-half">
+
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img title="Interactions with each-other" class="w3-card-image"
+                                                    src="img/img-7.jpg">
+                                                <h6>Interactions with each-other</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with each-other</h6>
+                                                <p>Interactions of people that are hospitable, inclusive, welcoming,
+                                                    participative,
+                                                    and
+                                                    non-violent, contribute to increasing the performance of their
+                                                    country
+                                                    to
+                                                    the well-being
+                                                    of our planet.</p>
+                                                <p>These may be short term actions, driven by fashions, fads, or strong
+                                                    examples.
+                                                    They may be driven by policies framed by their administrators,
+                                                    representatives, or leaders.
+                                                    Or they may be the result of the culture that defines their way of
+                                                    living
+                                                    and interacting with their world.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="w3-card-image" title="Interactions with other species"
+                                                    src="img/img-8.jpg">
+                                                <h6>Interactions with other species</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with other species</h6>
+                                                <p>Interactions that result in leaving more space
+                                                    - land, air, and water in their country -for other species improve
+                                                    the
+                                                    performance of their country in contributing
+                                                    to the well-being of our planet.</p>
+                                                <p> These may be short term actions, driven by
+                                                    fashions, fads, or strong
+                                                    examples.
+                                                    They may be driven by policies framed by their administrators,
+                                                    representatives, or leaders.
+                                                    Or they may be the result of the culture that defines their way of
+                                                    living
+                                                    and interacting with their world.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w3-section w3-half">
+
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="w3-card-image" title="Interactions with ecosystems"
+                                                    src="img/img-9.jpg" alt="Avatar">
+                                                <h6>Interactions with ecosystems</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with ecosystems</h6>
+                                                <p>Actions, policies, and culture that help the people of a country to
+                                                    reduce
+                                                    its
+                                                    exploitation, encroachment, and
+                                                    pollution on every unit of land, improve the countries performance
+                                                    in
+                                                    contributing to the well-being of our planet.</p>
+                                                <p>Short-term performance changes usually reflect actions driven by
+                                                    fashions,
+                                                    fads, reactions to events, and strong influencers. Medium-term
+                                                    performance
+                                                    changes usually reflect the consequences of policy driven actions.
+                                                    Long-term
+                                                    performance changes usually reflect the consequences of the culture
+                                                    of
+                                                    the
+                                                    people in a country.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img class="w3-card-image"
+                                                    title="Interactions with human designed systems"
+                                                    src="img/img-10.jpg" alt="Avatar">
+                                                <h6>Interactions with human designed systems</h6>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <h6>Interactions with human designed systems</h6>
+                                                <p>The actions, policies, and culture that improve the access and
+                                                    quality
+                                                    of
+                                                    food, health, education, economy, security, dignity, and fairness,
+                                                    improve the performance
+                                                    of their country in the contributions it makes to the well-being of
+                                                    our
+                                                    planet.
+                                                </p>
+                                                <p>Short-term performance changes usually reflect actions driven by
+                                                    fashions,
+                                                    fads, reactions to events, and strong influencers. Medium-term
+                                                    performance
+                                                    changes usually reflect the consequences of policy driven actions.
+                                                    Long-term
+                                                    performance changes usually reflect the consequences of the culture
+                                                    of
+                                                    the
+                                                    people in a country.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>20 Highest and Lowest Performers</h1>
+                                <p class="subheading">Here's how the actions, policies, and culture driving the
+                                    interactions people had with each other, with other life forms, with
+                                    ecosystems, and with the human designed systems and organizations
+                                    altered a countries performance in the short, medium, and long-term contributed
+                                </p>
+                            </div>
+                            <div class="w3-row-padding w3-cell w3-twothird w3-mobile">
+                                <div class="w3-iframe-container">
+                                    <iframe title="Earth Index for 20 biggest performers in 1992"
+                                        src="graphs/Earth Index in 2019 of 20 highest performers from 1992 to 2019.html">Graph</iframe>
+                                </div>
+                                <section class="w3-carousel w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide17" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 biggest performers between 1992 and 2019"
+                                                src="graphs/20 HIGHEST AND 20 LOWEST performers between 1992 and 2019.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide18" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 biggest performers between 2009 and 2019"
+                                                src="graphs/20 HIGHEST AND 20 LOWEST performers between 2009 and 2019.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide19" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="Earth Index for 20 biggest performers between 2018 and 2019"
+                                                src="graphs/20 HIGHEST AND 20 LOWEST performers between 2018 and 2019.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <p class="subtitle">
+                                </p>
+
+                                <section class="w3-carousel w3-card-4 w3-iframe-container" aria-label="Gallery">
+                                    <ol class="w3-carousel__viewport w3-opacity-min">
+                                        <li id="carousel__slide20" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="20 HIGHEST performers between 1992 and 2019"
+                                                src="tables/20 HIGHEST performers between 1992 and 2019 compared with their performance for other periods. Scores of the Earth Index and its components in 2019 provided for reference.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide21" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="20 HIGHEST performers between 2009 and 2019"
+                                                src="tables/20 HIGHEST performers between 2009 and 2019 compared with their performance for other periods. Scores of the Earth Index and its components in 2019 provided for reference.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide22" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="20 HIGHEST performers between 2018 and 2019"
+                                                src="tables/20 HIGHEST performers between 2018 and 2019 compared with their performance for other periods. Scores of the Earth Index and its components in 2019 provided for reference.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide23" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="20 LOWEST performers between 1992 and 2019"
+                                                src="tables/20 LOWEST performers between 1992 and 2019 compared with their performance for other periods. Scores of the Earth Index and its components in 2019 provided for reference.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide24" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="20 LOWEST performers between 2009 and 2019"
+                                                src="tables/20 LOWEST performers between 2009 and 2019 compared with their performance for other periods. Scores of the Earth Index and its components in 2019 provided for reference.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                        <li id="carousel__slide25" tabindex="0" class="w3-carousel__slide">
+                                            <div class="w3-carousel__snapper"></div>
+                                            <!-- <div class="w3-iframe-container"> -->
+                                            <iframe title="20 LOWEST performers between 2018 and 2019"
+                                                src="tables/20 LOWEST performers between 2018 and 2019 compared with their performance for other periods. Scores of the Earth Index and its components in 2019 provided for reference.html">Graph</iframe>
+                                            <!-- </div> -->
+                                        </li>
+                                    </ol>
+                                </section>
+                                <p></p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Get Involved -->
+
+                <article>
+                    <div class="w3-row w3-padding w3-margin-left w3-margin-right w3-auto-top" id="GetInvolved">
+                        <div class="w3-container w3-card-4 w3-white w3-margin w3-padding w3-animate-zoom">
+                            <div class="w3-row-padding w3-third w3-cell w3-mobile">
+                                <h1>Get Involved in Contributing to the Well-being of Our Planet</h1>
+                                <p class="subheading">Here are some ways you can get involved in improving the
+                                    contributions
+                                    of your country to the well-being of our planet
+                                </p>
+
+                            </div>
+                            <div class="w3-row-padding w3-cell w3-twothird w3-mobile">
+                                <section aria-label="Options to get involved">
+                                    <form action="mailto:earthindex.info@gmail.com" method="post" enctype="text/plain"
+                                        class="w3-container w3-padding w3-card-4">
+                                        <br>
+                                        <label class="w3-bar-item menu-item"> I would like to:</label>
+                                        <br>
+                                        <div class="w3-row">
+                                            <input name="learn" class="w3-check" type="checkbox">
+                                            <label class="w3-bar-item menu-item"> Learn more about the
+                                                Earth Index and how different countries performed in the 2022
+                                                Report</label>
+                                            <br>
+                                            <input name="mobilize" class="w3-check" type="checkbox">
+                                            <label class="w3-bar-item menu-item">Build upon the ideas in the 2022
+                                                Report and start an Earth Index movement in my country </label>
+                                            <br>
+                                            <input name="inform" class="w3-check" type="checkbox">
+                                            <label class="w3-bar-item menu-item">Suggest ideas
+                                                for actions, policies, and culture that will improve the performance
+                                                of countries in their contributions to the well-being of our
+                                                planet</label>
+                                            <br>
+                                            <input name="trace" class="w3-check" type="checkbox">
+                                            <label class="w3-bar-item menu-item">Inform about the
+                                                actions, policies, and culture that altered the performance
+                                                of your countries contributions to the well-being of our planet</label>
+                                            <br>
+                                            <p>
+                                                <label class="w3-bar-item menu-item">Name</label>
+                                                <input name="name" class="w3-input w3-border" type="text" required>
+                                            </p>
+                                            <p>
+                                                <label class="w3-bar-item menu-item">Email</label>
+                                                <input name="email" class="w3-input w3-border" type="text" required>
+                                            </p>
+                                            <br>
+                                        </div>
+                                        <p>
+                                            <input class="w3-btn w3-teal w3-bar-item menu-item w3-padding" type="reset"
+                                                value="Reset">
+                                            <input class="w3-btn w3-teal w3-bar-item menu-item w3-padding" type="submit"
+                                                value="Send email request">
+                                        </p>
+                                    </form>
+
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </article>
+        </main>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KREDXFZ0C5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-KREDXFZ0C5');
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,911 @@
+<style type="text/css">
+#T_efbbe table {
+  width: 100%;
+  display: table;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-collapse: collapse !important;
+  border-spacing: 0px !important;
+  font-family: Calibri Light;
+  font-size: 9pt;
+  color: black;
+  text-transform: uppercase;
+}
+#T_efbbe caption {
+  display: table-caption;
+  text-align: center;
+  caption-side: bottom;
+  font-family: Calibri Light;
+  font-size: 9pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#T_efbbe th {
+  display: table-cell;
+  background-color: grey;
+  border-collapse: collapse !important;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: 0 2px 2px - 1px rgba(0, 0, 0, 0.4);
+  font-family: Calibri Light;
+  font-size: 11px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  padding: 8px 8px;
+  text-align: center;
+  vertical-align: top;
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+}
+#T_efbbe tr {
+  display: table-row;
+  border-collapse: collapse !important;
+  border-bottom: 1px dotted black;
+}
+#T_efbbe tr:nth-child(even) {
+  background-color: #f1f1f1;
+}
+#T_efbbe tr:nth-child(odd) {
+  background-color: #fff;
+}
+#T_efbbe tr:hover {
+  background: #ccc;
+}
+#T_efbbe td {
+  display: table-cell;
+  border-collapse: collapse !important;
+  border-bottom: 1px dotted black;
+  font-family: Calibri Light;
+  padding: 8px 8px;
+  text-align: right;
+  vertical-align: top;
+  font-size: 11px;
+}
+#T_efbbe thead tr th:nth-child(1) {
+  position: sticky;
+  background-color: white;
+  left: 0px;
+  z-index: 3 !important;
+}
+#T_efbbe tbody tr th:nth-child(1) {
+  position: sticky;
+  background-color: white;
+  left: 0px;
+  z-index: 1;
+}
+#T_efbbe thead tr:nth-child(1) th {
+  position: sticky;
+  background-color: white;
+  top: 0px;
+  z-index: 2;
+}
+#T_efbbe_row0_col0, #T_efbbe_row0_col1, #T_efbbe_row0_col3, #T_efbbe_row5_col0, #T_efbbe_row5_col1, #T_efbbe_row5_col3, #T_efbbe_row10_col0, #T_efbbe_row10_col1, #T_efbbe_row10_col3, #T_efbbe_row15_col0, #T_efbbe_row15_col1, #T_efbbe_row15_col3, #T_efbbe_row20_col0, #T_efbbe_row20_col1, #T_efbbe_row20_col3, #T_efbbe_row25_col0, #T_efbbe_row25_col1, #T_efbbe_row25_col3, #T_efbbe_row30_col0, #T_efbbe_row30_col1, #T_efbbe_row30_col3, #T_efbbe_row35_col0, #T_efbbe_row35_col1, #T_efbbe_row35_col3, #T_efbbe_row40_col0, #T_efbbe_row40_col1, #T_efbbe_row40_col3, #T_efbbe_row45_col0, #T_efbbe_row45_col1, #T_efbbe_row45_col3, #T_efbbe_row50_col0, #T_efbbe_row50_col1, #T_efbbe_row50_col3, #T_efbbe_row55_col0, #T_efbbe_row55_col1, #T_efbbe_row55_col3, #T_efbbe_row60_col0, #T_efbbe_row60_col1, #T_efbbe_row60_col3, #T_efbbe_row65_col0, #T_efbbe_row65_col1, #T_efbbe_row65_col3, #T_efbbe_row70_col0, #T_efbbe_row70_col1, #T_efbbe_row70_col3, #T_efbbe_row75_col0, #T_efbbe_row75_col1, #T_efbbe_row75_col3, #T_efbbe_row80_col0, #T_efbbe_row80_col1, #T_efbbe_row80_col3, #T_efbbe_row85_col0, #T_efbbe_row85_col1, #T_efbbe_row85_col3, #T_efbbe_row90_col0, #T_efbbe_row90_col1, #T_efbbe_row90_col3, #T_efbbe_row95_col0, #T_efbbe_row95_col1, #T_efbbe_row95_col3 {
+  font-weight: bold;
+}
+#T_efbbe_row0_col4, #T_efbbe_row5_col4, #T_efbbe_row30_col4, #T_efbbe_row35_col4, #T_efbbe_row40_col4, #T_efbbe_row45_col4, #T_efbbe_row65_col4, #T_efbbe_row70_col4, #T_efbbe_row80_col4, #T_efbbe_row85_col4, #T_efbbe_row90_col4, #T_efbbe_row95_col4 {
+  background-color: #91d068;
+  color: #000000;
+  font-weight: bold;
+}
+#T_efbbe_row1_col0, #T_efbbe_row1_col1, #T_efbbe_row1_col3, #T_efbbe_row2_col0, #T_efbbe_row2_col1, #T_efbbe_row2_col3, #T_efbbe_row3_col0, #T_efbbe_row3_col1, #T_efbbe_row3_col3, #T_efbbe_row6_col0, #T_efbbe_row6_col1, #T_efbbe_row6_col3, #T_efbbe_row7_col0, #T_efbbe_row7_col1, #T_efbbe_row7_col3, #T_efbbe_row8_col0, #T_efbbe_row8_col1, #T_efbbe_row8_col3, #T_efbbe_row11_col0, #T_efbbe_row11_col1, #T_efbbe_row11_col3, #T_efbbe_row12_col0, #T_efbbe_row12_col1, #T_efbbe_row12_col3, #T_efbbe_row13_col0, #T_efbbe_row13_col1, #T_efbbe_row13_col3, #T_efbbe_row16_col0, #T_efbbe_row16_col1, #T_efbbe_row16_col3, #T_efbbe_row17_col0, #T_efbbe_row17_col1, #T_efbbe_row17_col3, #T_efbbe_row18_col0, #T_efbbe_row18_col1, #T_efbbe_row18_col3, #T_efbbe_row21_col0, #T_efbbe_row21_col1, #T_efbbe_row21_col3, #T_efbbe_row22_col0, #T_efbbe_row22_col1, #T_efbbe_row22_col3, #T_efbbe_row23_col0, #T_efbbe_row23_col1, #T_efbbe_row23_col3, #T_efbbe_row26_col0, #T_efbbe_row26_col1, #T_efbbe_row26_col3, #T_efbbe_row27_col0, #T_efbbe_row27_col1, #T_efbbe_row27_col3, #T_efbbe_row28_col0, #T_efbbe_row28_col1, #T_efbbe_row28_col3, #T_efbbe_row31_col0, #T_efbbe_row31_col1, #T_efbbe_row31_col3, #T_efbbe_row32_col0, #T_efbbe_row32_col1, #T_efbbe_row32_col3, #T_efbbe_row33_col0, #T_efbbe_row33_col1, #T_efbbe_row33_col3, #T_efbbe_row36_col0, #T_efbbe_row36_col1, #T_efbbe_row36_col3, #T_efbbe_row37_col0, #T_efbbe_row37_col1, #T_efbbe_row37_col3, #T_efbbe_row38_col0, #T_efbbe_row38_col1, #T_efbbe_row38_col3, #T_efbbe_row41_col0, #T_efbbe_row41_col1, #T_efbbe_row41_col3, #T_efbbe_row42_col0, #T_efbbe_row42_col1, #T_efbbe_row42_col3, #T_efbbe_row43_col0, #T_efbbe_row43_col1, #T_efbbe_row43_col3, #T_efbbe_row46_col0, #T_efbbe_row46_col1, #T_efbbe_row46_col3, #T_efbbe_row47_col0, #T_efbbe_row47_col1, #T_efbbe_row47_col3, #T_efbbe_row48_col0, #T_efbbe_row48_col1, #T_efbbe_row48_col3, #T_efbbe_row51_col0, #T_efbbe_row51_col1, #T_efbbe_row51_col3, #T_efbbe_row52_col0, #T_efbbe_row52_col1, #T_efbbe_row52_col3, #T_efbbe_row53_col0, #T_efbbe_row53_col1, #T_efbbe_row53_col3, #T_efbbe_row56_col0, #T_efbbe_row56_col1, #T_efbbe_row56_col3, #T_efbbe_row57_col0, #T_efbbe_row57_col1, #T_efbbe_row57_col3, #T_efbbe_row58_col0, #T_efbbe_row58_col1, #T_efbbe_row58_col3, #T_efbbe_row61_col0, #T_efbbe_row61_col1, #T_efbbe_row61_col3, #T_efbbe_row62_col0, #T_efbbe_row62_col1, #T_efbbe_row62_col3, #T_efbbe_row63_col0, #T_efbbe_row63_col1, #T_efbbe_row63_col3, #T_efbbe_row66_col0, #T_efbbe_row66_col1, #T_efbbe_row66_col3, #T_efbbe_row67_col0, #T_efbbe_row67_col1, #T_efbbe_row67_col3, #T_efbbe_row68_col0, #T_efbbe_row68_col1, #T_efbbe_row68_col3, #T_efbbe_row71_col0, #T_efbbe_row71_col1, #T_efbbe_row71_col3, #T_efbbe_row72_col0, #T_efbbe_row72_col1, #T_efbbe_row72_col3, #T_efbbe_row73_col0, #T_efbbe_row73_col1, #T_efbbe_row73_col3, #T_efbbe_row76_col0, #T_efbbe_row76_col1, #T_efbbe_row76_col3, #T_efbbe_row77_col0, #T_efbbe_row77_col1, #T_efbbe_row77_col3, #T_efbbe_row78_col0, #T_efbbe_row78_col1, #T_efbbe_row78_col3, #T_efbbe_row81_col0, #T_efbbe_row81_col1, #T_efbbe_row81_col3, #T_efbbe_row82_col0, #T_efbbe_row82_col1, #T_efbbe_row82_col3, #T_efbbe_row83_col0, #T_efbbe_row83_col1, #T_efbbe_row83_col3, #T_efbbe_row86_col0, #T_efbbe_row86_col1, #T_efbbe_row86_col3, #T_efbbe_row87_col0, #T_efbbe_row87_col1, #T_efbbe_row87_col3, #T_efbbe_row88_col0, #T_efbbe_row88_col1, #T_efbbe_row88_col3, #T_efbbe_row91_col0, #T_efbbe_row91_col1, #T_efbbe_row91_col3, #T_efbbe_row92_col0, #T_efbbe_row92_col1, #T_efbbe_row92_col3, #T_efbbe_row93_col0, #T_efbbe_row93_col1, #T_efbbe_row93_col3, #T_efbbe_row96_col0, #T_efbbe_row96_col1, #T_efbbe_row96_col3, #T_efbbe_row97_col0, #T_efbbe_row97_col1, #T_efbbe_row97_col3, #T_efbbe_row98_col0, #T_efbbe_row98_col1, #T_efbbe_row98_col3 {
+  font-weight: normal;
+}
+#T_efbbe_row1_col4 {
+  background-color: #3faa59;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row2_col4, #T_efbbe_row32_col4, #T_efbbe_row47_col4, #T_efbbe_row67_col4, #T_efbbe_row87_col4, #T_efbbe_row92_col4, #T_efbbe_row97_col4 {
+  background-color: #8ccd67;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row3_col4 {
+  background-color: #7ac665;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row4_col0, #T_efbbe_row4_col1, #T_efbbe_row4_col3, #T_efbbe_row9_col0, #T_efbbe_row9_col1, #T_efbbe_row9_col3, #T_efbbe_row14_col0, #T_efbbe_row14_col1, #T_efbbe_row14_col3, #T_efbbe_row19_col0, #T_efbbe_row19_col1, #T_efbbe_row19_col3, #T_efbbe_row24_col0, #T_efbbe_row24_col1, #T_efbbe_row24_col3, #T_efbbe_row29_col0, #T_efbbe_row29_col1, #T_efbbe_row29_col3, #T_efbbe_row34_col0, #T_efbbe_row34_col1, #T_efbbe_row34_col3, #T_efbbe_row39_col0, #T_efbbe_row39_col1, #T_efbbe_row39_col3, #T_efbbe_row44_col0, #T_efbbe_row44_col1, #T_efbbe_row44_col3, #T_efbbe_row49_col0, #T_efbbe_row49_col1, #T_efbbe_row49_col3, #T_efbbe_row54_col0, #T_efbbe_row54_col1, #T_efbbe_row54_col3, #T_efbbe_row59_col0, #T_efbbe_row59_col1, #T_efbbe_row59_col3, #T_efbbe_row64_col0, #T_efbbe_row64_col1, #T_efbbe_row64_col3, #T_efbbe_row69_col0, #T_efbbe_row69_col1, #T_efbbe_row69_col3, #T_efbbe_row74_col0, #T_efbbe_row74_col1, #T_efbbe_row74_col3, #T_efbbe_row79_col0, #T_efbbe_row79_col1, #T_efbbe_row79_col3, #T_efbbe_row84_col0, #T_efbbe_row84_col1, #T_efbbe_row84_col3, #T_efbbe_row89_col0, #T_efbbe_row89_col1, #T_efbbe_row89_col3, #T_efbbe_row94_col0, #T_efbbe_row94_col1, #T_efbbe_row94_col3, #T_efbbe_row99_col0, #T_efbbe_row99_col1, #T_efbbe_row99_col3 {
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row4_col4 {
+  background-color: #0a7b41;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row6_col4, #T_efbbe_row26_col4 {
+  background-color: #36a657;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row7_col4 {
+  background-color: #89cc67;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row8_col4, #T_efbbe_row23_col4, #T_efbbe_row63_col4 {
+  background-color: #78c565;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row9_col4 {
+  background-color: #30a356;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row10_col4, #T_efbbe_row15_col4, #T_efbbe_row20_col4, #T_efbbe_row25_col4, #T_efbbe_row50_col4, #T_efbbe_row55_col4, #T_efbbe_row60_col4, #T_efbbe_row75_col4 {
+  background-color: #93d168;
+  color: #000000;
+  font-weight: bold;
+}
+#T_efbbe_row11_col4, #T_efbbe_row21_col4, #T_efbbe_row36_col4, #T_efbbe_row41_col4, #T_efbbe_row51_col4, #T_efbbe_row61_col4, #T_efbbe_row81_col4, #T_efbbe_row86_col4, #T_efbbe_row91_col4, #T_efbbe_row96_col4 {
+  background-color: #39a758;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row12_col4, #T_efbbe_row17_col4, #T_efbbe_row22_col4, #T_efbbe_row27_col4, #T_efbbe_row37_col4, #T_efbbe_row42_col4, #T_efbbe_row52_col4, #T_efbbe_row57_col4, #T_efbbe_row62_col4, #T_efbbe_row72_col4, #T_efbbe_row77_col4, #T_efbbe_row82_col4 {
+  background-color: #8ecf67;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row13_col4, #T_efbbe_row33_col4, #T_efbbe_row58_col4, #T_efbbe_row78_col4, #T_efbbe_row83_col4 {
+  background-color: #82c966;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row14_col4 {
+  background-color: #04703b;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row16_col4 {
+  background-color: #c7e77f;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row18_col4, #T_efbbe_row28_col4, #T_efbbe_row88_col4 {
+  background-color: #7dc765;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row19_col4 {
+  background-color: #feeb9d;
+  color: #000000;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row24_col4 {
+  background-color: #c3e67d;
+  color: #000000;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row29_col4 {
+  background-color: #54b45f;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row31_col4 {
+  background-color: #57b65f;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row34_col4 {
+  background-color: #4eb15d;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row38_col4, #T_efbbe_row43_col4, #T_efbbe_row53_col4, #T_efbbe_row73_col4, #T_efbbe_row93_col4, #T_efbbe_row98_col4 {
+  background-color: #7fc866;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row39_col4 {
+  background-color: #e9f6a1;
+  color: #000000;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row44_col4 {
+  background-color: #d9ef8b;
+  color: #000000;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row46_col4 {
+  background-color: #fdc776;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row48_col4 {
+  background-color: #006837;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row49_col4 {
+  background-color: #36a657;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row54_col4 {
+  background-color: #128a49;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row56_col4 {
+  background-color: #48ae5c;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row59_col4 {
+  background-color: #0e8245;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row64_col4 {
+  background-color: #18954f;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row66_col4 {
+  background-color: #d9ef8b;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row68_col4 {
+  background-color: #18954f;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row69_col4 {
+  background-color: #9dd569;
+  color: #000000;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row71_col4 {
+  background-color: #fee28f;
+  color: #000000;
+  font-weight: normal;
+}
+#T_efbbe_row74_col4 {
+  background-color: #a50026;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row76_col4 {
+  background-color: #3ca959;
+  color: #f1f1f1;
+  font-weight: normal;
+}
+#T_efbbe_row79_col4, #T_efbbe_row84_col4 {
+  background-color: #0d8044;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row89_col4 {
+  background-color: #cfeb85;
+  color: #000000;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row94_col4 {
+  background-color: #138c4a;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+#T_efbbe_row99_col4 {
+  background-color: #036e3a;
+  color: #f1f1f1;
+  border-bottom: 1px solid black !important;
+}
+</style>
+<table id="T_efbbe">
+  <caption>Scores of 20 LEAST contributors for <span style="background-color:yellow">1992</span></caption>
+  <thead>
+    <tr>
+      <th id="T_efbbe_level0_col0" class="col_heading level0 col0" >Continent</th>
+      <th id="T_efbbe_level0_col1" class="col_heading level0 col1" >Country</th>
+      <th id="T_efbbe_level0_col3" class="col_heading level0 col3" >variable</th>
+      <th id="T_efbbe_level0_col4" class="col_heading level0 col4" >value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_efbbe_row0_col0" class="data row0 col0" >EUROPE</td>
+      <td id="T_efbbe_row0_col1" class="data row0 col1" >ALBANIA</td>
+      <td id="T_efbbe_row0_col3" class="data row0 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row0_col4" class="data row0 col4" >47.219034</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row1_col0" class="data row1 col0" >EUROPE</td>
+      <td id="T_efbbe_row1_col1" class="data row1 col1" >ALBANIA</td>
+      <td id="T_efbbe_row1_col3" class="data row1 col3" >ICP I</td>
+      <td id="T_efbbe_row1_col4" class="data row1 col4" >52.069635</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row2_col0" class="data row2 col0" >EUROPE</td>
+      <td id="T_efbbe_row2_col1" class="data row2 col1" >ALBANIA</td>
+      <td id="T_efbbe_row2_col3" class="data row2 col3" >ICP II</td>
+      <td id="T_efbbe_row2_col4" class="data row2 col4" >47.533307</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row3_col0" class="data row3 col0" >EUROPE</td>
+      <td id="T_efbbe_row3_col1" class="data row3 col1" >ALBANIA</td>
+      <td id="T_efbbe_row3_col3" class="data row3 col3" >ICP III</td>
+      <td id="T_efbbe_row3_col4" class="data row3 col4" >48.734215</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row4_col0" class="data row4 col0" >EUROPE</td>
+      <td id="T_efbbe_row4_col1" class="data row4 col1" >ALBANIA</td>
+      <td id="T_efbbe_row4_col3" class="data row4 col3" >ICP IV</td>
+      <td id="T_efbbe_row4_col4" class="data row4 col4" >56.605926</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row5_col0" class="data row5 col0" >AFRICA</td>
+      <td id="T_efbbe_row5_col1" class="data row5 col1" >ALGERIA</td>
+      <td id="T_efbbe_row5_col3" class="data row5 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row5_col4" class="data row5 col4" >47.318640</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row6_col0" class="data row6 col0" >AFRICA</td>
+      <td id="T_efbbe_row6_col1" class="data row6 col1" >ALGERIA</td>
+      <td id="T_efbbe_row6_col3" class="data row6 col3" >ICP I</td>
+      <td id="T_efbbe_row6_col4" class="data row6 col4" >52.452739</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row7_col0" class="data row7 col0" >AFRICA</td>
+      <td id="T_efbbe_row7_col1" class="data row7 col1" >ALGERIA</td>
+      <td id="T_efbbe_row7_col3" class="data row7 col3" >ICP II</td>
+      <td id="T_efbbe_row7_col4" class="data row7 col4" >47.646984</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row8_col0" class="data row8 col0" >AFRICA</td>
+      <td id="T_efbbe_row8_col1" class="data row8 col1" >ALGERIA</td>
+      <td id="T_efbbe_row8_col3" class="data row8 col3" >ICP III</td>
+      <td id="T_efbbe_row8_col4" class="data row8 col4" >48.804669</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row9_col0" class="data row9 col0" >AFRICA</td>
+      <td id="T_efbbe_row9_col1" class="data row9 col1" >ALGERIA</td>
+      <td id="T_efbbe_row9_col3" class="data row9 col3" >ICP IV</td>
+      <td id="T_efbbe_row9_col4" class="data row9 col4" >52.913562</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row10_col0" class="data row10 col0" >ASIA</td>
+      <td id="T_efbbe_row10_col1" class="data row10 col1" >BAHRAIN</td>
+      <td id="T_efbbe_row10_col3" class="data row10 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row10_col4" class="data row10 col4" >47.128146</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row11_col0" class="data row11 col0" >ASIA</td>
+      <td id="T_efbbe_row11_col1" class="data row11 col1" >BAHRAIN</td>
+      <td id="T_efbbe_row11_col3" class="data row11 col3" >ICP I</td>
+      <td id="T_efbbe_row11_col4" class="data row11 col4" >52.424473</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row12_col0" class="data row12 col0" >ASIA</td>
+      <td id="T_efbbe_row12_col1" class="data row12 col1" >BAHRAIN</td>
+      <td id="T_efbbe_row12_col3" class="data row12 col3" >ICP II</td>
+      <td id="T_efbbe_row12_col4" class="data row12 col4" >47.430131</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row13_col0" class="data row13 col0" >ASIA</td>
+      <td id="T_efbbe_row13_col1" class="data row13 col1" >BAHRAIN</td>
+      <td id="T_efbbe_row13_col3" class="data row13 col3" >ICP III</td>
+      <td id="T_efbbe_row13_col4" class="data row13 col4" >48.175030</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row14_col0" class="data row14 col0" >ASIA</td>
+      <td id="T_efbbe_row14_col1" class="data row14 col1" >BAHRAIN</td>
+      <td id="T_efbbe_row14_col3" class="data row14 col3" >ICP IV</td>
+      <td id="T_efbbe_row14_col4" class="data row14 col4" >57.480319</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row15_col0" class="data row15 col0" >AFRICA</td>
+      <td id="T_efbbe_row15_col1" class="data row15 col1" >BURUNDI</td>
+      <td id="T_efbbe_row15_col3" class="data row15 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row15_col4" class="data row15 col4" >47.158066</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row16_col0" class="data row16 col0" >AFRICA</td>
+      <td id="T_efbbe_row16_col1" class="data row16 col1" >BURUNDI</td>
+      <td id="T_efbbe_row16_col3" class="data row16 col3" >ICP I</td>
+      <td id="T_efbbe_row16_col4" class="data row16 col4" >43.185349</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row17_col0" class="data row17 col0" >AFRICA</td>
+      <td id="T_efbbe_row17_col1" class="data row17 col1" >BURUNDI</td>
+      <td id="T_efbbe_row17_col3" class="data row17 col3" >ICP II</td>
+      <td id="T_efbbe_row17_col4" class="data row17 col4" >47.464283</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row18_col0" class="data row18 col0" >AFRICA</td>
+      <td id="T_efbbe_row18_col1" class="data row18 col1" >BURUNDI</td>
+      <td id="T_efbbe_row18_col3" class="data row18 col3" >ICP III</td>
+      <td id="T_efbbe_row18_col4" class="data row18 col4" >48.500260</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row19_col0" class="data row19 col0" >AFRICA</td>
+      <td id="T_efbbe_row19_col1" class="data row19 col1" >BURUNDI</td>
+      <td id="T_efbbe_row19_col3" class="data row19 col3" >ICP IV</td>
+      <td id="T_efbbe_row19_col4" class="data row19 col4" >35.126095</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row20_col0" class="data row20 col0" >AFRICA</td>
+      <td id="T_efbbe_row20_col1" class="data row20 col1" >DJIBOUTI</td>
+      <td id="T_efbbe_row20_col3" class="data row20 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row20_col4" class="data row20 col4" >47.129132</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row21_col0" class="data row21 col0" >AFRICA</td>
+      <td id="T_efbbe_row21_col1" class="data row21 col1" >DJIBOUTI</td>
+      <td id="T_efbbe_row21_col3" class="data row21 col3" >ICP I</td>
+      <td id="T_efbbe_row21_col4" class="data row21 col4" >52.448817</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row22_col0" class="data row22 col0" >AFRICA</td>
+      <td id="T_efbbe_row22_col1" class="data row22 col1" >DJIBOUTI</td>
+      <td id="T_efbbe_row22_col3" class="data row22 col3" >ICP II</td>
+      <td id="T_efbbe_row22_col4" class="data row22 col4" >47.430835</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row23_col0" class="data row23 col0" >AFRICA</td>
+      <td id="T_efbbe_row23_col1" class="data row23 col1" >DJIBOUTI</td>
+      <td id="T_efbbe_row23_col3" class="data row23 col3" >ICP III</td>
+      <td id="T_efbbe_row23_col4" class="data row23 col4" >48.785515</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row24_col0" class="data row24 col0" >AFRICA</td>
+      <td id="T_efbbe_row24_col1" class="data row24 col1" >DJIBOUTI</td>
+      <td id="T_efbbe_row24_col3" class="data row24 col3" >ICP IV</td>
+      <td id="T_efbbe_row24_col4" class="data row24 col4" >43.626308</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row25_col0" class="data row25 col0" >AFRICA</td>
+      <td id="T_efbbe_row25_col1" class="data row25 col1" >EGYPT, ARAB REP.</td>
+      <td id="T_efbbe_row25_col3" class="data row25 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row25_col4" class="data row25 col4" >47.133708</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row26_col0" class="data row26 col0" >AFRICA</td>
+      <td id="T_efbbe_row26_col1" class="data row26 col1" >EGYPT, ARAB REP.</td>
+      <td id="T_efbbe_row26_col3" class="data row26 col3" >ICP I</td>
+      <td id="T_efbbe_row26_col4" class="data row26 col4" >52.452445</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row27_col0" class="data row27 col0" >AFRICA</td>
+      <td id="T_efbbe_row27_col1" class="data row27 col1" >EGYPT, ARAB REP.</td>
+      <td id="T_efbbe_row27_col3" class="data row27 col3" >ICP II</td>
+      <td id="T_efbbe_row27_col4" class="data row27 col4" >47.436264</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row28_col0" class="data row28 col0" >AFRICA</td>
+      <td id="T_efbbe_row28_col1" class="data row28 col1" >EGYPT, ARAB REP.</td>
+      <td id="T_efbbe_row28_col3" class="data row28 col3" >ICP III</td>
+      <td id="T_efbbe_row28_col4" class="data row28 col4" >48.477733</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row29_col0" class="data row29 col0" >AFRICA</td>
+      <td id="T_efbbe_row29_col1" class="data row29 col1" >EGYPT, ARAB REP.</td>
+      <td id="T_efbbe_row29_col3" class="data row29 col3" >ICP IV</td>
+      <td id="T_efbbe_row29_col4" class="data row29 col4" >51.006670</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row30_col0" class="data row30 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row30_col1" class="data row30 col1" >EL SALVADOR</td>
+      <td id="T_efbbe_row30_col3" class="data row30 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row30_col4" class="data row30 col4" >47.209854</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row31_col0" class="data row31 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row31_col1" class="data row31 col1" >EL SALVADOR</td>
+      <td id="T_efbbe_row31_col3" class="data row31 col3" >ICP I</td>
+      <td id="T_efbbe_row31_col4" class="data row31 col4" >50.823236</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row32_col0" class="data row32 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row32_col1" class="data row32 col1" >EL SALVADOR</td>
+      <td id="T_efbbe_row32_col3" class="data row32 col3" >ICP II</td>
+      <td id="T_efbbe_row32_col4" class="data row32 col4" >47.523443</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row33_col0" class="data row33 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row33_col1" class="data row33 col1" >EL SALVADOR</td>
+      <td id="T_efbbe_row33_col3" class="data row33 col3" >ICP III</td>
+      <td id="T_efbbe_row33_col4" class="data row33 col4" >48.219308</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row34_col0" class="data row34 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row34_col1" class="data row34 col1" >EL SALVADOR</td>
+      <td id="T_efbbe_row34_col3" class="data row34 col3" >ICP IV</td>
+      <td id="T_efbbe_row34_col4" class="data row34 col4" >51.203212</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row35_col0" class="data row35 col0" >AFRICA</td>
+      <td id="T_efbbe_row35_col1" class="data row35 col1" >GAMBIA, THE</td>
+      <td id="T_efbbe_row35_col3" class="data row35 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row35_col4" class="data row35 col4" >47.174516</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row36_col0" class="data row36 col0" >AFRICA</td>
+      <td id="T_efbbe_row36_col1" class="data row36 col1" >GAMBIA, THE</td>
+      <td id="T_efbbe_row36_col3" class="data row36 col3" >ICP I</td>
+      <td id="T_efbbe_row36_col4" class="data row36 col4" >52.446506</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row37_col0" class="data row37 col0" >AFRICA</td>
+      <td id="T_efbbe_row37_col1" class="data row37 col1" >GAMBIA, THE</td>
+      <td id="T_efbbe_row37_col3" class="data row37 col3" >ICP II</td>
+      <td id="T_efbbe_row37_col4" class="data row37 col4" >47.483116</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row38_col0" class="data row38 col0" >AFRICA</td>
+      <td id="T_efbbe_row38_col1" class="data row38 col1" >GAMBIA, THE</td>
+      <td id="T_efbbe_row38_col3" class="data row38 col3" >ICP III</td>
+      <td id="T_efbbe_row38_col4" class="data row38 col4" >48.374584</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row39_col0" class="data row39 col0" >AFRICA</td>
+      <td id="T_efbbe_row39_col1" class="data row39 col1" >GAMBIA, THE</td>
+      <td id="T_efbbe_row39_col3" class="data row39 col3" >ICP IV</td>
+      <td id="T_efbbe_row39_col4" class="data row39 col4" >40.037019</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row40_col0" class="data row40 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row40_col1" class="data row40 col1" >HAITI</td>
+      <td id="T_efbbe_row40_col3" class="data row40 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row40_col4" class="data row40 col4" >47.172112</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row41_col0" class="data row41 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row41_col1" class="data row41 col1" >HAITI</td>
+      <td id="T_efbbe_row41_col3" class="data row41 col3" >ICP I</td>
+      <td id="T_efbbe_row41_col4" class="data row41 col4" >52.356388</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row42_col0" class="data row42 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row42_col1" class="data row42 col1" >HAITI</td>
+      <td id="T_efbbe_row42_col3" class="data row42 col3" >ICP II</td>
+      <td id="T_efbbe_row42_col4" class="data row42 col4" >47.480390</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row43_col0" class="data row43 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row43_col1" class="data row43 col1" >HAITI</td>
+      <td id="T_efbbe_row43_col3" class="data row43 col3" >ICP III</td>
+      <td id="T_efbbe_row43_col4" class="data row43 col4" >48.329708</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row44_col0" class="data row44 col0" >NORTH AMERICA</td>
+      <td id="T_efbbe_row44_col1" class="data row44 col1" >HAITI</td>
+      <td id="T_efbbe_row44_col3" class="data row44 col3" >ICP IV</td>
+      <td id="T_efbbe_row44_col4" class="data row44 col4" >41.836468</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row45_col0" class="data row45 col0" >ASIA</td>
+      <td id="T_efbbe_row45_col1" class="data row45 col1" >IRAQ</td>
+      <td id="T_efbbe_row45_col3" class="data row45 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row45_col4" class="data row45 col4" >47.230089</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row46_col0" class="data row46 col0" >ASIA</td>
+      <td id="T_efbbe_row46_col1" class="data row46 col1" >IRAQ</td>
+      <td id="T_efbbe_row46_col3" class="data row46 col3" >ICP I</td>
+      <td id="T_efbbe_row46_col4" class="data row46 col4" >31.555538</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row47_col0" class="data row47 col0" >ASIA</td>
+      <td id="T_efbbe_row47_col1" class="data row47 col1" >IRAQ</td>
+      <td id="T_efbbe_row47_col3" class="data row47 col3" >ICP II</td>
+      <td id="T_efbbe_row47_col4" class="data row47 col4" >47.536187</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row48_col0" class="data row48 col0" >ASIA</td>
+      <td id="T_efbbe_row48_col1" class="data row48 col1" >IRAQ</td>
+      <td id="T_efbbe_row48_col3" class="data row48 col3" >ICP III</td>
+      <td id="T_efbbe_row48_col4" class="data row48 col4" >58.219255</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row49_col0" class="data row49 col0" >ASIA</td>
+      <td id="T_efbbe_row49_col1" class="data row49 col1" >IRAQ</td>
+      <td id="T_efbbe_row49_col3" class="data row49 col3" >ICP IV</td>
+      <td id="T_efbbe_row49_col4" class="data row49 col4" >52.578130</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row50_col0" class="data row50 col0" >ASIA</td>
+      <td id="T_efbbe_row50_col1" class="data row50 col1" >JORDAN</td>
+      <td id="T_efbbe_row50_col3" class="data row50 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row50_col4" class="data row50 col4" >47.139520</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row51_col0" class="data row51 col0" >ASIA</td>
+      <td id="T_efbbe_row51_col1" class="data row51 col1" >JORDAN</td>
+      <td id="T_efbbe_row51_col3" class="data row51 col3" >ICP I</td>
+      <td id="T_efbbe_row51_col4" class="data row51 col4" >52.440303</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row52_col0" class="data row52 col0" >ASIA</td>
+      <td id="T_efbbe_row52_col1" class="data row52 col1" >JORDAN</td>
+      <td id="T_efbbe_row52_col3" class="data row52 col3" >ICP II</td>
+      <td id="T_efbbe_row52_col4" class="data row52 col4" >47.442919</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row53_col0" class="data row53 col0" >ASIA</td>
+      <td id="T_efbbe_row53_col1" class="data row53 col1" >JORDAN</td>
+      <td id="T_efbbe_row53_col3" class="data row53 col3" >ICP III</td>
+      <td id="T_efbbe_row53_col4" class="data row53 col4" >48.394402</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row54_col0" class="data row54 col0" >ASIA</td>
+      <td id="T_efbbe_row54_col1" class="data row54 col1" >JORDAN</td>
+      <td id="T_efbbe_row54_col3" class="data row54 col3" >ICP IV</td>
+      <td id="T_efbbe_row54_col4" class="data row54 col4" >55.320980</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row55_col0" class="data row55 col0" >ASIA</td>
+      <td id="T_efbbe_row55_col1" class="data row55 col1" >LEBANON</td>
+      <td id="T_efbbe_row55_col3" class="data row55 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row55_col4" class="data row55 col4" >47.144173</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row56_col0" class="data row56 col0" >ASIA</td>
+      <td id="T_efbbe_row56_col1" class="data row56 col1" >LEBANON</td>
+      <td id="T_efbbe_row56_col3" class="data row56 col3" >ICP I</td>
+      <td id="T_efbbe_row56_col4" class="data row56 col4" >51.499227</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row57_col0" class="data row57 col0" >ASIA</td>
+      <td id="T_efbbe_row57_col1" class="data row57 col1" >LEBANON</td>
+      <td id="T_efbbe_row57_col3" class="data row57 col3" >ICP II</td>
+      <td id="T_efbbe_row57_col4" class="data row57 col4" >47.448428</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row58_col0" class="data row58 col0" >ASIA</td>
+      <td id="T_efbbe_row58_col1" class="data row58 col1" >LEBANON</td>
+      <td id="T_efbbe_row58_col3" class="data row58 col3" >ICP III</td>
+      <td id="T_efbbe_row58_col4" class="data row58 col4" >48.195898</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row59_col0" class="data row59 col0" >ASIA</td>
+      <td id="T_efbbe_row59_col1" class="data row59 col1" >LEBANON</td>
+      <td id="T_efbbe_row59_col3" class="data row59 col3" >ICP IV</td>
+      <td id="T_efbbe_row59_col4" class="data row59 col4" >55.843344</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row60_col0" class="data row60 col0" >AFRICA</td>
+      <td id="T_efbbe_row60_col1" class="data row60 col1" >LIBYA</td>
+      <td id="T_efbbe_row60_col3" class="data row60 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row60_col4" class="data row60 col4" >47.153671</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row61_col0" class="data row61 col0" >AFRICA</td>
+      <td id="T_efbbe_row61_col1" class="data row61 col1" >LIBYA</td>
+      <td id="T_efbbe_row61_col3" class="data row61 col3" >ICP I</td>
+      <td id="T_efbbe_row61_col4" class="data row61 col4" >52.411197</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row62_col0" class="data row62 col0" >AFRICA</td>
+      <td id="T_efbbe_row62_col1" class="data row62 col1" >LIBYA</td>
+      <td id="T_efbbe_row62_col3" class="data row62 col3" >ICP II</td>
+      <td id="T_efbbe_row62_col4" class="data row62 col4" >47.458632</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row63_col0" class="data row63 col0" >AFRICA</td>
+      <td id="T_efbbe_row63_col1" class="data row63 col1" >LIBYA</td>
+      <td id="T_efbbe_row63_col3" class="data row63 col3" >ICP III</td>
+      <td id="T_efbbe_row63_col4" class="data row63 col4" >48.834142</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row64_col0" class="data row64 col0" >AFRICA</td>
+      <td id="T_efbbe_row64_col1" class="data row64 col1" >LIBYA</td>
+      <td id="T_efbbe_row64_col3" class="data row64 col3" >ICP IV</td>
+      <td id="T_efbbe_row64_col4" class="data row64 col4" >54.311192</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row65_col0" class="data row65 col0" >AFRICA</td>
+      <td id="T_efbbe_row65_col1" class="data row65 col1" >MAURITANIA</td>
+      <td id="T_efbbe_row65_col3" class="data row65 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row65_col4" class="data row65 col4" >47.187042</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row66_col0" class="data row66 col0" >AFRICA</td>
+      <td id="T_efbbe_row66_col1" class="data row66 col1" >MAURITANIA</td>
+      <td id="T_efbbe_row66_col3" class="data row66 col3" >ICP I</td>
+      <td id="T_efbbe_row66_col4" class="data row66 col4" >41.822484</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row67_col0" class="data row67 col0" >AFRICA</td>
+      <td id="T_efbbe_row67_col1" class="data row67 col1" >MAURITANIA</td>
+      <td id="T_efbbe_row67_col3" class="data row67 col3" >ICP II</td>
+      <td id="T_efbbe_row67_col4" class="data row67 col4" >47.491264</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row68_col0" class="data row68 col0" >AFRICA</td>
+      <td id="T_efbbe_row68_col1" class="data row68 col1" >MAURITANIA</td>
+      <td id="T_efbbe_row68_col3" class="data row68 col3" >ICP III</td>
+      <td id="T_efbbe_row68_col4" class="data row68 col4" >54.233762</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row69_col0" class="data row69 col0" >AFRICA</td>
+      <td id="T_efbbe_row69_col1" class="data row69 col1" >MAURITANIA</td>
+      <td id="T_efbbe_row69_col3" class="data row69 col3" >ICP IV</td>
+      <td id="T_efbbe_row69_col4" class="data row69 col4" >46.377019</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row70_col0" class="data row70 col0" >AFRICA</td>
+      <td id="T_efbbe_row70_col1" class="data row70 col1" >RWANDA</td>
+      <td id="T_efbbe_row70_col3" class="data row70 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row70_col4" class="data row70 col4" >47.163561</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row71_col0" class="data row71 col0" >AFRICA</td>
+      <td id="T_efbbe_row71_col1" class="data row71 col1" >RWANDA</td>
+      <td id="T_efbbe_row71_col3" class="data row71 col3" >ICP I</td>
+      <td id="T_efbbe_row71_col4" class="data row71 col4" >33.890643</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row72_col0" class="data row72 col0" >AFRICA</td>
+      <td id="T_efbbe_row72_col1" class="data row72 col1" >RWANDA</td>
+      <td id="T_efbbe_row72_col3" class="data row72 col3" >ICP II</td>
+      <td id="T_efbbe_row72_col4" class="data row72 col4" >47.470993</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row73_col0" class="data row73 col0" >AFRICA</td>
+      <td id="T_efbbe_row73_col1" class="data row73 col1" >RWANDA</td>
+      <td id="T_efbbe_row73_col3" class="data row73 col3" >ICP III</td>
+      <td id="T_efbbe_row73_col4" class="data row73 col4" >48.338441</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row74_col0" class="data row74 col0" >AFRICA</td>
+      <td id="T_efbbe_row74_col1" class="data row74 col1" >RWANDA</td>
+      <td id="T_efbbe_row74_col3" class="data row74 col3" >ICP IV</td>
+      <td id="T_efbbe_row74_col4" class="data row74 col4" >17.200613</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row75_col0" class="data row75 col0" >AFRICA</td>
+      <td id="T_efbbe_row75_col1" class="data row75 col1" >SEYCHELLES</td>
+      <td id="T_efbbe_row75_col3" class="data row75 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row75_col4" class="data row75 col4" >47.131992</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row76_col0" class="data row76 col0" >AFRICA</td>
+      <td id="T_efbbe_row76_col1" class="data row76 col1" >SEYCHELLES</td>
+      <td id="T_efbbe_row76_col3" class="data row76 col3" >ICP I</td>
+      <td id="T_efbbe_row76_col4" class="data row76 col4" >52.243169</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row77_col0" class="data row77 col0" >AFRICA</td>
+      <td id="T_efbbe_row77_col1" class="data row77 col1" >SEYCHELLES</td>
+      <td id="T_efbbe_row77_col3" class="data row77 col3" >ICP II</td>
+      <td id="T_efbbe_row77_col4" class="data row77 col4" >47.434530</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row78_col0" class="data row78 col0" >AFRICA</td>
+      <td id="T_efbbe_row78_col1" class="data row78 col1" >SEYCHELLES</td>
+      <td id="T_efbbe_row78_col3" class="data row78 col3" >ICP III</td>
+      <td id="T_efbbe_row78_col4" class="data row78 col4" >48.186601</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row79_col0" class="data row79 col0" >AFRICA</td>
+      <td id="T_efbbe_row79_col1" class="data row79 col1" >SEYCHELLES</td>
+      <td id="T_efbbe_row79_col3" class="data row79 col3" >ICP IV</td>
+      <td id="T_efbbe_row79_col4" class="data row79 col4" >56.092851</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row80_col0" class="data row80 col0" >ASIA</td>
+      <td id="T_efbbe_row80_col1" class="data row80 col1" >SYRIAN ARAB REPUBLIC</td>
+      <td id="T_efbbe_row80_col3" class="data row80 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row80_col4" class="data row80 col4" >47.172408</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row81_col0" class="data row81 col0" >ASIA</td>
+      <td id="T_efbbe_row81_col1" class="data row81 col1" >SYRIAN ARAB REPUBLIC</td>
+      <td id="T_efbbe_row81_col3" class="data row81 col3" >ICP I</td>
+      <td id="T_efbbe_row81_col4" class="data row81 col4" >52.357813</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row82_col0" class="data row82 col0" >ASIA</td>
+      <td id="T_efbbe_row82_col1" class="data row82 col1" >SYRIAN ARAB REPUBLIC</td>
+      <td id="T_efbbe_row82_col3" class="data row82 col3" >ICP II</td>
+      <td id="T_efbbe_row82_col4" class="data row82 col4" >47.480602</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row83_col0" class="data row83 col0" >ASIA</td>
+      <td id="T_efbbe_row83_col1" class="data row83 col1" >SYRIAN ARAB REPUBLIC</td>
+      <td id="T_efbbe_row83_col3" class="data row83 col3" >ICP III</td>
+      <td id="T_efbbe_row83_col4" class="data row83 col4" >48.244430</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row84_col0" class="data row84 col0" >ASIA</td>
+      <td id="T_efbbe_row84_col1" class="data row84 col1" >SYRIAN ARAB REPUBLIC</td>
+      <td id="T_efbbe_row84_col3" class="data row84 col3" >ICP IV</td>
+      <td id="T_efbbe_row84_col4" class="data row84 col4" >56.051242</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row85_col0" class="data row85 col0" >AFRICA</td>
+      <td id="T_efbbe_row85_col1" class="data row85 col1" >TOGO</td>
+      <td id="T_efbbe_row85_col3" class="data row85 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row85_col4" class="data row85 col4" >47.283023</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row86_col0" class="data row86 col0" >AFRICA</td>
+      <td id="T_efbbe_row86_col1" class="data row86 col1" >TOGO</td>
+      <td id="T_efbbe_row86_col3" class="data row86 col3" >ICP I</td>
+      <td id="T_efbbe_row86_col4" class="data row86 col4" >52.445854</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row87_col0" class="data row87 col0" >AFRICA</td>
+      <td id="T_efbbe_row87_col1" class="data row87 col1" >TOGO</td>
+      <td id="T_efbbe_row87_col3" class="data row87 col3" >ICP II</td>
+      <td id="T_efbbe_row87_col4" class="data row87 col4" >47.606697</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row88_col0" class="data row88 col0" >AFRICA</td>
+      <td id="T_efbbe_row88_col1" class="data row88 col1" >TOGO</td>
+      <td id="T_efbbe_row88_col3" class="data row88 col3" >ICP III</td>
+      <td id="T_efbbe_row88_col4" class="data row88 col4" >48.600104</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row89_col0" class="data row89 col0" >AFRICA</td>
+      <td id="T_efbbe_row89_col1" class="data row89 col1" >TOGO</td>
+      <td id="T_efbbe_row89_col3" class="data row89 col3" >ICP IV</td>
+      <td id="T_efbbe_row89_col4" class="data row89 col4" >42.570224</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row90_col0" class="data row90 col0" >AFRICA</td>
+      <td id="T_efbbe_row90_col1" class="data row90 col1" >TUNISIA</td>
+      <td id="T_efbbe_row90_col3" class="data row90 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row90_col4" class="data row90 col4" >47.202942</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row91_col0" class="data row91 col0" >AFRICA</td>
+      <td id="T_efbbe_row91_col1" class="data row91 col1" >TUNISIA</td>
+      <td id="T_efbbe_row91_col3" class="data row91 col3" >ICP I</td>
+      <td id="T_efbbe_row91_col4" class="data row91 col4" >52.450546</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row92_col0" class="data row92 col0" >AFRICA</td>
+      <td id="T_efbbe_row92_col1" class="data row92 col1" >TUNISIA</td>
+      <td id="T_efbbe_row92_col3" class="data row92 col3" >ICP II</td>
+      <td id="T_efbbe_row92_col4" class="data row92 col4" >47.515405</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row93_col0" class="data row93 col0" >AFRICA</td>
+      <td id="T_efbbe_row93_col1" class="data row93 col1" >TUNISIA</td>
+      <td id="T_efbbe_row93_col3" class="data row93 col3" >ICP III</td>
+      <td id="T_efbbe_row93_col4" class="data row93 col4" >48.307602</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row94_col0" class="data row94 col0" >AFRICA</td>
+      <td id="T_efbbe_row94_col1" class="data row94 col1" >TUNISIA</td>
+      <td id="T_efbbe_row94_col3" class="data row94 col3" >ICP IV</td>
+      <td id="T_efbbe_row94_col4" class="data row94 col4" >55.032719</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row95_col0" class="data row95 col0" >SOUTH AMERICA</td>
+      <td id="T_efbbe_row95_col1" class="data row95 col1" >URUGUAY</td>
+      <td id="T_efbbe_row95_col3" class="data row95 col3" >EARTH INDEX</td>
+      <td id="T_efbbe_row95_col4" class="data row95 col4" >47.233362</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row96_col0" class="data row96 col0" >SOUTH AMERICA</td>
+      <td id="T_efbbe_row96_col1" class="data row96 col1" >URUGUAY</td>
+      <td id="T_efbbe_row96_col3" class="data row96 col3" >ICP I</td>
+      <td id="T_efbbe_row96_col4" class="data row96 col4" >52.414368</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row97_col0" class="data row97 col0" >SOUTH AMERICA</td>
+      <td id="T_efbbe_row97_col1" class="data row97 col1" >URUGUAY</td>
+      <td id="T_efbbe_row97_col3" class="data row97 col3" >ICP II</td>
+      <td id="T_efbbe_row97_col4" class="data row97 col4" >47.550047</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row98_col0" class="data row98 col0" >SOUTH AMERICA</td>
+      <td id="T_efbbe_row98_col1" class="data row98 col1" >URUGUAY</td>
+      <td id="T_efbbe_row98_col3" class="data row98 col3" >ICP III</td>
+      <td id="T_efbbe_row98_col4" class="data row98 col4" >48.347387</td>
+    </tr>
+    <tr>
+      <td id="T_efbbe_row99_col0" class="data row99 col0" >SOUTH AMERICA</td>
+      <td id="T_efbbe_row99_col1" class="data row99 col1" >URUGUAY</td>
+      <td id="T_efbbe_row99_col3" class="data row99 col3" >ICP IV</td>
+      <td id="T_efbbe_row99_col4" class="data row99 col4" >57.613093</td>
+    </tr>
+  </tbody>
+</table>
