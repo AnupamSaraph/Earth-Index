@@ -1,31 +1,57 @@
-<!doctype html>
 <html class="no-js" lang="en">
 
     <head>
+        <!-- Primary Meta Tags -->
         <meta charset="utf-8">
-        <title>Earth Index</title>
-        <meta name="description" content="Index of Contributions to the Well-being of Our Planet">
+        <title>Earth Index Home</title>
+        <meta name="title" content="Earth Index">
+        <meta name="description" content="The Earth Index reports the contributions countries make to
+                                        the well-being of our planet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+            content="Impact Investing, ESG, SDG, Earth Index, Contributions, well-being, planetary well-being">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="revisit-after" content="30 days">
 
-
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://earth-index.info">
         <meta property="og:title" content="Earth Index">
-        <meta property="og:type" content="web-page">
-        <meta property="og:url" content="Earth-Index.info">
-        <meta property="og:image" content="">
+        <meta property="og:description" content="The Earth Index reports the contributions countries make to
+                                        the well-being of our planet">
+        <meta property="og:image" content="img/Earth-Index-Color.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://earth-index.info">
+        <meta property="twitter:title" content="Earth Index">
+        <meta property="twitter:description" content="The Earth Index reports the contributions countries make to
+                                        the well-being of our planet">
+        <meta property="twitter:image" content="img/Earth-Index-Color.png">
+
 
         <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="favicon.ico">
-        <link rel="icon" href="img/EarthIndex-white.png" type="image/x-icon">
+        <link rel="apple-touch-icon" href="img/Earth-Index-Color.png">
+        <link rel="icon" href="img/Earth-Index-Color.png" type="image/x-icon">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css"> -->
         <link rel="stylesheet" href="css/w3.css">
-        <meta name="announcement" content="Watch this space for the Earth Index">
+        <meta name="theme-color" content="#fafafa">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+        <!--javascript-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     </head>
 
-<style>
+    <style>
         body,
         html {
             height: 100%;
@@ -51,7 +77,7 @@
             left: 16px;
             display: flex;
             align-items: center;
-            justify-content: center 
+            justify-content: center
         }
 
         .middle {
@@ -74,64 +100,77 @@
 
     <body>
 
-    <div class="w3-wrapper w3-cell-top w3-responsive w3-mobile">
-        <div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card w3-opacity-min w3-mobile w3-responsive w3-mobile">
-            <div class="w3-container w3-cell w3-cell-middle">
-            <img float=left src="favicon.ico" height="60px" alt="Earth Index">
-        </div>
-        <div class="w3-container w3-cell w3-cell-middle w3-mobile">
-            <span class="w3-left w3-responsive">Index of Contributions to the Well-being of Our Planet <b>ICP</b></span>
-        </div>
-    </div>
-    <div class="w3-wrapper w3-cell-top w3-responsive">
-        <div class="bgimg w3-mobile">
-            <video autoplay loop muted class="wrapper__video">
-                <source src="img/Winter-Grass.mp4">
-            </video>
-        </div>
-    </div>
-    <div class="w3-wrapper w3-cell-top w3-responsive">
-        <div class="w3-display-middle middle w3-text-brown w3-mobile">
-            <h1>COMING SOON</h1>
-            <hr>
-            <h2 id="countdown" ></h2>
-        </div> 
-    </div>
-    <div class="w3-container w3-cell-bottom w3-responsive">
-        <div class="w3-center w3-bar w3-display-bottommiddle w3-text-amber w3-mobile">
-            <h4>Watch this space to participate and improve the contributions of your country to the well-being of our planet</h4>
-        </div>
-    </div>
+        <div class="w3-wrapper w3-cell-top w3-responsive w3-mobile">
+            <div
+                class="w3-top w3-bar w3-white w3-wide w3-padding w3-card w3-opacity-min w3-mobile w3-responsive w3-mobile">
+                <div class="w3-container w3-cell w3-cell-middle">
+                    <img float=left src="img/Earth-Index-Color.png" height="60px" alt="Earth Index">
+                </div>
+                <div class="w3-container w3-cell w3-cell-middle w3-mobile">
+                    <span class="w3-left w3-responsive">Index of Contributions to the Well-being of Our Planet
+                        <b>ICP</b></span>
+                </div>
+            </div>
+            <div class="w3-wrapper w3-cell-top w3-responsive">
+                <div class="bgimg w3-mobile">
+                    <video autoplay loop muted class="wrapper__video">
+                        <source src="img/Winter-Grass.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="w3-wrapper w3-cell-top w3-responsive">
+                <div class="w3-display-middle middle w3-text-brown w3-mobile">
+                    <h1>COMING SOON</h1>
+                    <hr>
+                    <h2 id="countdown"></h2>
+                </div>
+            </div>
+            <div class="w3-container w3-cell-bottom w3-responsive">
+                <div class="w3-center w3-bar w3-display-bottommiddle w3-text-amber w3-mobile">
+                    <h4>Watch this space to participate and improve the contributions of your country to the well-being
+                        of our planet</h4>
+                </div>
+            </div>
 
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Dec 31, 2022 12:00:00").getTime();
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Dec 31, 2022 12:00:00").getTime();
 
-        // Update the count down every 1 second
-        var countdownfunction = setInterval(function() {
-            // Get todays date and time
-            var now = new Date().getTime();
-            
-            // Find the distance between now an the count down date
-            var distance = countDownDate - now;
-            
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-            // Output the result in an element with id="demo"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-            
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(countdownfunction);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-            }, 1000);
-    </script>
+                // Update the count down every 1 second
+                var countdownfunction = setInterval(function () {
+                    // Get todays date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now an the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                        + minutes + "m " + seconds + "s ";
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(countdownfunction);
+                        document.getElementById("countdown").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+            </script>
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-KREDXFZ0C5"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', 'G-KREDXFZ0C5');
+            </script>
 
     </body>
 
