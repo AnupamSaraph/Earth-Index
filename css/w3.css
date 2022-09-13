@@ -383,7 +383,7 @@ ol,li {list-style: none;margin: 0;padding: 0;}
 .w3-carousel__snapper {position: absolute;top: 0;left: 0;width: 100%;height: 100%;scroll-snap-align: center;}
 @media (hover: hover) {.w3-carousel__snapper {animation-name: tonext, snap;animation-timing-function: ease;animation-duration: 10s;animation-iteration-count: infinite;}
 .w3-carousel__slide:last-child .w3-carousel__snapper {animation-name: tostart, snap;}}
-@media (prefers-reduced-motion: reduce) {.w3-carousel__snapper {animation-name: none;}}
+/* @media (prefers-reduced-motion: reduce) {.w3-carousel__snapper {animation-name: none;}} */
 .w3-carousel:hover .w3-carousel__snapper,.w3-carousel:focus-within .w3-carousel__snapper {animation-name: none;}
 
 /*

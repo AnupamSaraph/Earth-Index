@@ -130,6 +130,13 @@
         document.getElementById("myFooter").style.height = "80px";
         // document.getElementById("content").style.marginTop = "250px";
         document.getElementById("closedFooter").style.display = "none";
+        anchor = document.getElementById("myFooter");
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          anchor.title("This website works best on devices with screen size larger than 600 px");
+        } else {
+          anchor.title = ''
+        }
+
       }
 
       function closeFooter() {
