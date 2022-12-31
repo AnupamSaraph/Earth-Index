@@ -1,2 +1,0 @@
-# ICP
-Earth Index
