@@ -25,7 +25,7 @@ html {
 }
 
 body {
-    font-family: "Oswald", "Roboto Condensed", Arial, sans-serif;
+    font-family: "Oswald", "Roboto Condensed", Arial, sans-serif !important !;
     font-weight: 600;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -42,8 +42,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Oswald", "Roboto Condensed", Arial, sans-serif;
-    font-weight: 600;
+    font-family: "Oswald", "Roboto Condensed", Arial, sans-serif !important;
+    font-weight: 600 !important;
     margin: 10px 0;
 }
 
