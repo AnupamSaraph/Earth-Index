@@ -1,0 +1,438 @@
+/* Split-Complementary Palette https://www.color-name.com/night-sky.color */
+.nightSky {
+    background-color: #0c0440;
+}
+
+.blackBean {
+    background-color: #400c04;
+}
+
+.darkBronze {
+    background-color: #384004;
+}
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+
+html {
+    z-index: -1;
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    moz-osx-font-smoothing: gray;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Oswald", "Roboto Condensed", Arial, sans-serif;
+    font-weight: 600;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-size: 24px;
+    color: #859386;
+    font-weight: 100;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", "Roboto Condensed", Arial, sans-serif;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* .section-heading {
+font-family: "Roboto Condensed", Arial, sans-serif;
+font-weight: 400;
+margin: 10px 0;
+color: #e3120b;
+padding-top: 8px;
+padding-bottom: 0.3125rem;
+} */
+
+.caption {
+    font-family: "Roboto Condensed", Arial, sans-serif;
+    font-size: large;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 0.01em 16px;
+    text-align: center;
+}
+
+
+#slide-text-container h1,
+h2 {
+    margin-top: 40%;
+    text-transform: uppercase;
+    font-size: 40px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+/* body {font-family: "Oswald", "Open Sans"} */
+#slide-text-container p {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.slide-text {
+    padding-bottom: 170px;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    align-self: auto;
+    /* margin: 80px auto 25px; */
+}
+
+#slide-text-container button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 110px;
+    min-height: 10%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    text-align: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    color: antiquewhite;
+    text-transform: uppercase;
+}
+
+#slide-text-container button:before {
+    content: "next";
+    font-size: smaller;
+    color: azure;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+#slide-text-container button:after {
+    position: relative;
+    z-index: 1;
+    color: #a9c896;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    color: blanchedalmond;
+    background-color: #400c04;
+    /* -webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1); */
+}
+
+.menu-item {
+    left: 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.1 !important;
+    text-align: left;
+}
+
+.menu-description {
+    padding-bottom: 16px !important;
+    left: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 100 !important;
+    color: #384004;
+    line-height: 1.1 !important;
+    text-align: left;
+}
+
+#menu-right a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+}
+
+#menu-right .menu-item:hover {
+    font-weight: bolder !important;
+    text-transform: uppercase;
+    background-color: orange !important;
+}
+
+.menu-item:hover .menu-description {
+    background-color: burlywood !important;
+}
+
+/* Layout */
+#logo {
+    cursor: pointer;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: url("img/Earth-Index-Color.png");
+    background-repeat: no-repeat;
+}
+
+#menu-right {
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    min-height: 100vh;
+    width: 434px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#content-right {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    min-height: 100vh;
+    width: 434px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#content-left {
+    position: fixed;
+    display: block;
+    width: calc(100% - 434px);
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.slide {
+    display: block;
+}
+
+#slide-text-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+#slide-button {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 80%;
+}
+
+.video-content {
+    height: 100%;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.portrait-frame {
+    width: auto;
+    min-width: 460px;
+    max-width: 100%;
+    height: 90%;
+}
+
+.landscape-frame {
+    width: 100%;
+    min-width: 440px;
+    max-width: 100%;
+    min-height: 680px;
+    max-height: 90%;
+    height: auto;
+}
+
+.preview-frame {
+    width: 440px;
+    min-width: 440px;
+    max-width: 100%;
+    height: auto;
+}
+
+.slide-container {
+    width: calc(100vw - 434px);
+    max-width: calc(100vw - 434px);
+    left: 0px;
+    top: 0px;
+    float: left;
+    border: none;
+}
+
+.slide-frame {
+    height: 100vh;
+    width: calc(100vw - 434px);
+    max-width: calc(100vw - 434px);
+    left: 0px;
+    top: 0px;
+    /* background-position: center;
+    background-size: cover; */
+    background-color: white;
+    float: left;
+    border: none;
+}
+
+
+/* Flip Card */
+.flip-card {
+    background-color: transparent;
+    width: 35vw;
+    height: 50vh;
+    perspective: 1000px;
+    padding-right: 25px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: white;
+    color: black;
+    overflow: hidden;
+}
+
+.flip-card-back {
+    background-color: #fffaf0;
+    color: black;
+    transform: rotateY(180deg);
+    overflow: auto;
+    padding: 2%;
+}
+
+.flip-card-inner img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 90%;
+    box-shadow: -8px 12px 16px 4px grey;
+    /* this adds the "card" effect */
+    padding-top: 8px;
+    background-color: #f1f1f1;
+}
+
+.EarthIndex-graphs,
+.ChangeInEarthIndex-graphs {
+    display: none
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+    cursor: pointer
+}
+
+.slide-frame-left {
+    content: "<";
+    /* transform: translate(-0%, -50%); -ms-transform: translate(-0%, -50%) */
+    /* position: -webkit-sticky;
+    position: sticky; */
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    color: white;
+    /* padding: 50px; */
+    font-size: 20px;
+}
+
+.slide-frame-right {
+    content: ">";
+    /* transform: translate(-0%, -50%); -ms-transform: translate(-0%, -50%) */
+    /*
+    position: -webkit-sticky; position: sticky; */
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    color: white;
+    /* padding:
+    50px; */
+    font-size: 20px;
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+}
+
+.bar,
+.change-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #859386;
+}
+
+#previous-button,
+#change-previous-button {
+    content: "<";
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: #859386;
+}
+
+#next-button,
+#change-next-button {
+    content: ">";
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 0px;
+    right: calc(434px - 4px);
+    background-color: #859386;
+}
