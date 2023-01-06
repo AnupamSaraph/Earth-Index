@@ -239,9 +239,9 @@ transform: scale(1.1); */
     background-color: #000;
 }
 
-/* .slide {
+.slide {
     display: block;
-} */
+}
 
 #slide-text-container {
     width: 100%;
