@@ -59,11 +59,13 @@ padding-bottom: 0.3125rem;
 
 .caption {
     font-family: "Roboto Condensed", Arial, sans-serif;
-    font-size: large;
+    font-size: medium;
     font-weight: 600;
     margin: 10px 0;
     padding: 0.01em 16px;
     text-align: center;
+    text-transform: uppercase;
+    color: black;
 }
 
 
@@ -240,7 +242,7 @@ transform: scale(1.1); */
 }
 
 .slide {
-    display: block;
+    display: inline-block;
 }
 
 #slide-text-container {
@@ -301,23 +303,33 @@ img {
     left: 0px;
     top: 0px;
     height: 0;
-    padding-bottom: 66.666666667%;
     position: relative;
     border: none;
-    display: flow-root;
+    zoom: calc(100vh/(100vw-400px));
+    -moz-transform: scale(calc(100vh/(100vw-400px)));
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(calc(100vh/(100vw-400px)));
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(calc(100vh/(100vw-400px)));
+    -webkit-transform-origin: 0 0;
 }
 
 .slide-frame {
     height: 100vh;
-    top: 0;
-    left: 0;
     width: 100%;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
+    padding-left: 4%;
+    padding-right: 6%;
     position: absolute;
+    object-fit: cover;
     background-color: white;
     border: none;
+    clear: both;
+    z-index: 1;
+
 }
+
 
 /* Flip Card */
 .flip-card {
@@ -423,22 +435,24 @@ img {
 
 #previous-button,
 #change-previous-button {
-    content: "<";
-    color: white;
-    font-size: 20px;
+    /* content: "<"; */
+    color: black;
+    font-size: 36px;
     position: fixed;
-    bottom: 0px;
+    top: 50%;
     left: 0px;
-    background-color: #859386;
+    margin-left: 2%;
+    z-index: 1000;
 }
 
 #next-button,
 #change-next-button {
-    content: ">";
-    color: white;
-    font-size: 20px;
+    /* content: ">"; */
+    color: black;
+    font-size: 36px;
     position: fixed;
-    bottom: 0px;
-    right: calc(400px - 4px);
-    background-color: #859386;
+    top: 50%;
+    right: calc(400px);
+    margin-right: 2%;
+    z-index: 1000;
 }
