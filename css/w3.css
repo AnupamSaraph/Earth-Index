@@ -428,6 +428,51 @@ a {
     position: relative
 }
 
+/* Flex Model */
+
+.w3-display-flex-container {
+    display: flex;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    width: 100vw;
+}
+
+.w3-flex-row-wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.w3-flex-col-wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.w3-flex-align-start {
+    align-self: flex-start;
+}
+
+.w3-flex-align-end {
+    align-self: flex-end;
+}
+
+.w3-flex-align-center {
+    align-self: center;
+}
+
+.w3-flex-align-baseline {
+    align-self: baseline;
+}
+
+.w3-flex-align-stretch {
+    align-self: stretch;
+}
+
+/* .w3-flex-grow {
+    width: 100vw;
+} */
+
 .w3-tooltip .w3-text {
     display: none
 }

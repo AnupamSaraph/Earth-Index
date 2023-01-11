@@ -98,11 +98,11 @@
                 style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
         <!-- Home -->
-        <div class="w3-container slide" id="Home">
-            <div class="w3-animate-left" id="content-left-1">
+        <div class="w3-display-container slide" id="Home">
+            <div class="w3-left w3-animate-left" id="content-left-1">
                 <video class="video-content" loop autoplay muted id="milkey-way" src="img/milkey-way.mp4"></video>
             </div>
-            <div class="w3-animate-right nightSky" id="content-right-1">
+            <div class="w3-left w3-animate-right nightSky" id="content-right-1">
                 <div id="slide-text-container">
                     <h1>Finding Home</h1>
                     <p class="slide-text">
@@ -118,11 +118,11 @@
         </div>
         <!-- End Home -->
         <!-- Earth -->
-        <div class="w3-container slide" id="Earth">
-            <div class="w3-animate-left" id="content-left-2">
+        <div class="w3-display-container .w3-flex-row-wrap slide" id="Earth">
+            <div class="w3-left w3-animate-left" id="content-left-2">
                 <video class="video-content" loop autoplay muted src="img/earth.mp4"></video>
             </div>
-            <div class="w3-animate-right nightSky" id="content-right-2">
+            <div class="w3-left w3-animate-right nightSky" id="content-right-2">
                 <div id="slide-text-container">
                     <h1>Our Earth</h1>
                     <p class="slide-text">
@@ -141,8 +141,8 @@
         </div>
         <!-- End Earth -->
         <!-- Liveable Planet -->
-        <div class="w3-container slide" id="LivablePlanet">
-            <div class="w3-animate-left" id="content-left-3">
+        <div class="w3-display-container .w3-flex-row-wrap slide" id="LivablePlanet">
+            <div class="w3-left w3-animate-left" id="content-left-3">
                 <div class="w3-row-padding w3-cell">
                     <div class="w3-half">
                         <div class="flip-card">
@@ -248,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-animate-right nightSky" id="content-right-3">
+            <div class="w3-left w3-animate-right nightSky" id="content-right-3">
                 <div id="slide-text-container">
                     <h1>What Makes Earth Livable?</h1>
                     <p class="slide-text">
@@ -264,8 +264,8 @@
         </div>
         <!-- End Livable Planet -->
         <!-- Earth Index -->
-        <div class="w3-container slide" id="EarthIndex">
-            <div class="w3-animate-left" id="content-left-4">
+        <div class="w3-display-container .w3-flex-row-wrap slide" id="EarthIndex">
+            <div class="w3-left w3-animate-left" id="content-left-4">
                 <div class="w3-content w3-display-container">
                     <div class="slide-container">
                         <button onclick="previousSlide(ICPSlides,ICPTitles,0,'slideContainerOne')">
@@ -286,7 +286,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-animate-right nightSky" id="content-right-4">
+            <div class="w3-left w3-animate-right nightSky" id="content-right-4">
                 <div id="slide-text-container">
                     <h1>Earth Index</h1>
                     <p class="slide-text">
@@ -306,8 +306,8 @@
         </div>
         <!-- End Earth Index -->
         <!-- Change in Earth Index -->
-        <div class="w3-container slide" id="ChangeInEarthIndex">
-            <div class="w3-animate-left" id="content-left-5">
+        <div class="w3-display-container .w3-flex-row-wrap slide" id="ChangeInEarthIndex">
+            <div class="w3-left w3-animate-left" id="content-left-5">
                 <div class="w3-content w3-display-container">
                     <div class="slide-container">
                         <button onclick="previousSlide(ICPChangeSlides,ICPChangeTitles,1,'slideContainerTwo')">
@@ -328,7 +328,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w3-animate-right nightSky" id="content-right-5">
+            <div class="w3-left w3-animate-right nightSky" id="content-right-5">
                 <div id="slide-text-container">
                     <h1>Change in Earth Index</h1>
                     <p class="slide-text">
@@ -349,94 +349,69 @@
         </div>
         <!-- End Change in Earth Index -->
         <!-- Get Involved -->
-        <div class="w3-container slide" id="GetInvolved">
-            <div class="w3-animate-left" id="content-left-6">
-                <div class="w3-container w3-responsive">
-                    <!-- <h1>Get Involved in Contributing to the livability of Our Planet</h1> -->
+        <div class="w3-display-container .w3-flex-row-wrap slide" id="GetInvolved">
+            <div class="w3-left w3-animate-left" id="content-left-1">
+                <div id="dialogboxID"
+                    class="w3-display-middle w3-white w3-left-align w3-modal-content w3-card-4 w3-animate-zoom">
+                    <form class="w3-container"
+                        action="mailto:earthindex.info@gmail.com?subject='Participating in the Earth Index Movement'"
+                        method="post" enctype="application/x-www-form-urlencoded">
+                        <div class="w3-container">
+                            <p>
+                                <b>I would like to:</b>
+                            </p>
+                            <label><input id="learn_id" name="learn" class="w3-check" type="checkbox"> Learn
+                                more about the Earth Index and how different countries
+                                performed in the 2022 Report</label><br>
+                            <label> <input name="mobilize" class="w3-check" type="checkbox"> Use the Earth
+                                Index to build a movement in my country to
+                                improve the liveability of our Earth
+                            </label><br>
+                            <label><input name="mobilize" class="w3-check" type="checkbox"> Report the
+                                interactions people have with each other, with
+                                other species, with ecosystems, and with human designed
+                                organizations that contributed to improving the the
+                                liveability of our planet</label><br>
+                            <label> <input name="trace" class="w3-check" type="checkbox" /> Suggest ideas
+                                for
+                                actions, policies, and culture that will
+                                improve the interactions people have with each other, with
+                                other species, with ecosystems, and with human designed
+                                organizations to improve our contributions to the liveability
+                                of our planet</label>
+                            <br><br>
+                            <label><b>Name</b></label>
+                            <input class="w3-input w3-border w3-margin-bottom" autocapitalize="words" type="text"
+                                placeholder="Enter your name" name="name" required>
+                            <label><b>Email</b></label>
+                            <input class="w3-input w3-border" type="email" autocomplete="email"
+                                placeholder="Enter email id" name="email" required>
+                            <button class="w3-button w3-block w3-green w3-section w3-padding"
+                                type="submit">Submit</button>
+                    </form>
 
-                    <section aria-label="Options to get involved">
-                        <form action="mailto:earthindex.info@gmail.com" method="post" enctype="text/plain"
-                            class="w3-container w3-padding w3-card-4">
-                            <br />
-                            <label class="w3-bar-item w3-text-white menu-description">
-                                I would like to:</label>
-                            <br /><br /><br />
-                            <div class="w3-row">
-                                <label class="w3-threequarter w3-text-white menu-description">
-                                    Learn more about the Earth Index and how different countries
-                                    performed in the 2022 Report</label>
-                                <input name="learn" class="w3-quarter w3-check" type="checkbox" />
-                                <!-- </div>
-                            <div class="w3-row"> -->
-                                <br />
-                                <br />
-                                <label class="w3-threequarter w3-text-white menu-description">Use the Earth Index to
-                                    build a movement in my country to
-                                    improve the liveability of our Earth
-                                </label>
-                                <input name="mobilize" class="w3-quarter w3-check" type="checkbox" />
-                                <!-- </div>
-                            <div class="w3-row"> -->
-                                <br />
-                                <br />
-                                <label class="w3-threequarter w3-text-white menu-description">Report the interactions
-                                    people have with each other, with
-                                    other species, with ecosystems, and with human designed
-                                    organizations that contributed to improving the the
-                                    liveability of our planet</label>
-                                <input name="trace" class="w3-quarter w3-check" type="checkbox" />
-                                <!-- </div>
-                            <div class="w3-row"> -->
-                                <br />
-                                <br />
-                                <label class="w3-threequarter w3-text-white menu-description">Suggest ideas for actions,
-                                    policies, and culture that will
-                                    improve the interactions people have with each other, with
-                                    other species, with ecosystems, and with human designed
-                                    organizations to improve our contributions to the liveability
-                                    of our planet</label>
-                                <input name="inform" class="w3-quarter w3-check" type="checkbox" />
-                            </div>
-                            <div class="w3-row">
-                                <label
-                                    class="w3-row-padding w3-padding w3-quarter w3-text-white menu-description">Name</label>
-                                <input name="name" class="w3-row-padding w3-padding w3-padding-large w3-input"
-                                    type="text" required />
-                            </div>
-                            <div class="w3-row">
-                                <label
-                                    class="w3-row-padding w3-padding w3-padding w3-quarter w3-text-white menu-description">Email</label>
-                                <input name="email" class="w3-row-padding w3-padding-large w3-input" type="text"
-                                    required />
-                            </div>
-                            <div class="w3-row">
-                                <br />
-                                <br />
-                            </div>
-                            <div class="w3-row">
-                                <input class="w3-btn darkBronze w3-hover-text-khaki menu-item w3-padding" type="reset"
-                                    value="Reset" />
-                                <input class="w3-btn darkBronze w3-hover-text-khaki menu-item w3-padding" type="submit"
-                                    value="Send email request" />
-                            </div>
-                        </form>
-                    </section>
-                </div>
-            </div>
-            <div class="w3-animate-right nightSky" id="content-right-6">
-                <div id="slide-text-container">
-                    <h1>Get Involved</h1>
-                    <p class="slide-text">
-                        Here are some ways you can get involved in improving the
-                        contributions of your country to the liveability of our planet
-                    </p>
-                    <button class="slide-button darkBronze" onclick="showID('Home')">
-                        Home
-                    </button>
+                    <div class="w3-container w3-border-top w3-padding-16 ">
+                        <button type="reset" value="" class="w3-button w3-red">Reset</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="w3-left w3-animate-right nightSky" id="content-right-1">
+            <div id="slide-text-container">
+                <h1>Get Involved</h1>
+                <p class="slide-text">
+                    Sign up or use the suggestions of how to get involved here to join the people
+                    working to improve the contributions your country makes to the liveability of our
+                    planet
+                </p>
+                <button class="slide-button darkBronze" onclick="showID('Home')">
+                    Our home in the universe
+                </button>
+            </div>
+        </div>
+        </div>
         <!-- End Get Involved -->
+        <!-- Menu -->
         <div class="w3-display-topright w3-dropdown-hover">
             <button class="w3-padding-large w3-button w3-text-white material-icons"
                 title="Hover here to see menu options">
@@ -447,20 +422,24 @@
                 <p></p>
                 <a href="#Home" class="w3-border-grey w3-leftbar w3-bar-item menu-item" onclick="showID('Home')">Home
                 </a>
-                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">Finding our
+                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">Finding
+                    our
                     home in the universe</a>
                 <a href="#Earth" class="w3-border-black w3-leftbar w3-bar-item menu-item"
                     onclick="showID('Earth')">Earth</a>
-                <a class="w3-border-bottom w3-border-black w3-white w3-leftbar w3-bar-item menu-description">What makes
+                <a class="w3-border-bottom w3-border-black w3-white w3-leftbar w3-bar-item menu-description">What
+                    makes
                     Earth a home?</a>
                 <a href="#LivablePlanet" class="w3-border-grey w3-leftbar w3-bar-item menu-item"
                     onclick="showID('LivablePlanet')">The Liveable Planet</a>
-                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">Our actions
+                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">Our
+                    actions
                     that keep our planet livable
                 </a>
                 <a href="#EarthIndex" class="w3-border-black w3-leftbar w3-bar-item menu-item"
                     onclick="showID('EarthIndex')">Earth Index</a>
-                <a class="w3-border-bottom w3-border-black w3-white w3-leftbar w3-bar-item menu-description">Our compass
+                <a class="w3-border-bottom w3-border-black w3-white w3-leftbar w3-bar-item menu-description">Our
+                    compass
                     to keep our planet liveable</a>
                 <a href="#ChangeInEarthIndex" class="w3-border-black w3-leftbar w3-bar-item menu-item"
                     onclick="showID('ChangeInEarthIndex')">Change in Earth Index</a>
@@ -468,7 +447,8 @@
                     with the most change in their Earth Index Scores</a>
                 <a href="#GetInvolved" class="w3-border-grey w3-leftbar w3-bar-item menu-item"
                     onclick="showID('GetInvolved')">Get involved</a>
-                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">Join the
+                <a class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description">Join
+                    the
                     movement to keep our planet livable</a>
                 <a class="w3-display-bottommiddle" href="#Home"><img float="left" src="img/Earth-Index-Color.png"
                         height="60px" alt="Earth Index" /></a>
@@ -552,8 +532,6 @@
             document.getElementById(frameID).title = newTitle
         }
 
-
-
         // Slideshow
         var slideIndex = 1;
         showDivs(slideIndex);
@@ -586,69 +564,91 @@
             y = document.getElementById(ID);
             y.style.display = "block";
         }
-
-        // var graphIndex = 1;
-        // showGraph(graphIndex);
-
-        // function plusGraph(n) {
-        //     showGraph((graphIndex += n));
-        // }
-
-        // function currentGraph(n) {
-        //     showGraph((graphIndex = n));
-        // }
-
-        // function showGraph(n) {
-        //     var i;
-        //     var x = document.getElementsByClassName("EarthIndex-graphs");
-        //     var dots = document.getElementsByClassName("demo");
-        //     if (n > x.length) {
-        //         graphIndex = 1;
-        //     }
-        //     if (n < 1) {
-        //         graphIndex = x.length;
-        //     }
-        //     for (i = 0; i < x.length; i++) {
-        //         x[i].style.display = "none";
-        //     }
-        //     for (i = 0; i < dots.length; i++) {
-        //         dots[i].className = dots[i].className.replace(" w3-white", "");
-        //     }
-        //     x[graphIndex - 1].style.display = "block";
-        //     dots[graphIndex - 1].className += " w3-white";
-        // }
-
-        // var changeIndex = 1;
-        // showChange(changeIndex);
-
-        // function plusChange(n) {
-        //     showChange((changeIndex += n));
-        // }
-
-        // function currentChange(n) {
-        //     showChange((changeIndex = n));
-        // }
-
-        // function showChange(n) {
-        //     var j;
-        //     var y = document.getElementsByClassName("ChangeInEarthIndex-graphs");
-        //     var dots = document.getElementsByClassName("demo");
-        //     if (n > y.length) {
-        //         changeIndex = 1;
-        //     }
-        //     if (n < 1) {
-        //         changeIndex = y.length;
-        //     }
-        //     for (j = 0; j < y.length; j++) {
-        //         y[j].style.display = "none";
-        //     }
-        //     for (j = 0; j < dots.length; j++) {
-        //         dots[j].className = dots[j].className.replace(" w3-white", "");
-        //     }
-        //     y[changeIndex - 1].style.display = "block";
-        //     dots[changeIndex - 1].className += " w3-white";
-        // }
     </script>
+
+    <script>
+        (function () {
+            var data = {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                url: "https://Earth-Index.info",
+                logo: "https://Earth-Index.info/img/Earth-Index-Color.png",
+            };
+            var script = document.createElement("script");
+            script.type = "application/ld+json";
+            script.innerHTML = JSON.stringify(data);
+            document.head.appendChild(script);
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var data = {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "What is the Earth Index?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "<p>The <a href='https://Earth-Index.info/#EarthIndex/'>Earth Index</a> 
+                                is an average of the scores for interactions people have with each other, with other 
+                                life forms, with ecosystems, and with their human designed systems and organizations.
+                                It is an indicator of the investment the country makes to the liveability of our home, Earth. 
+                                We report here the 20 countries that had the highest and and 20 that had the lowest
+                                <a href = 'https://Earth-Index.info/#EarthIndex/'>Earth Index</a> scores in 1992 and 2019.</p> "
+                                }
+        },
+            {
+                "@type": "Question",
+                "name": "What makes Earth livable?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "<p>The interactions we have with each other, with other species, with other ecosystems, and with
+                            organizations we create contribute to making our Earth
+                        <a href = 'https://Earth-Index.info/#LivablePlanet/'>livable</a>.</p> "
+                        }
+                        },
+        {
+            "@type": "Question",
+                "name": "What contributes to change in the livability of our Earth?",
+                    "acceptedAnswer": {
+                "@type": "Answer",
+                    "text": "<p>Actions, policies and culture of a country alter the interactions its people have with each other,
+                with other life forms, with ecosystems, and with their human designed systems and organizations.Decisions and
+                actions change from year - to - year influencing livability in the short - term.Policies change more slowly and,
+                    therefore, influence livability over the medium - term.Cultures last long and, therefore provide resilience to
+                livability of our Earth the over the long - term.The < a href = 'https://Earth-Index.info/#ChangeInEarthIndex/' > change</a >
+                 in the < a href = 'https://Earth-Index.info/#EarthIndex/' > Earth Index</a > of a country enables us to recognize the the
+                change in contributions it makes to livability of our Earth over these time periods.</p > "
+            }
+        },
+        {
+            "@type": "Question",
+                "name": "What can you do to improve the liveability of our Earth?",
+                    "acceptedAnswer": {
+                "@type": "Answer",
+                    "text": "<p><a href='https://Earth-Index.info/#GetInvolved/'>Get Involved</a> in the Earth Index movement to keep
+                our Earth Livable.</p > <p>Use the Earth Index to build a movement in your country to improve the liveability of
+            our Earth</p >
+            <p>Report the interactions people have with each other, with other species, with ecosystems, and
+                with human designed organizations that contributed to improving the the liveability of our planet</p>
+            <p>
+                Suggest ideas for actions, policies, and culture that will improve the interactions people have with each
+                other, with other species, with ecosystems, and with human designed organizations to improve our contributions
+                to the liveability of our planet </p> > "
+            }
+        }
+            ]
+            };
+        var script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.innerHTML = JSON.stringify(data);
+        document.head.appendChild(script);
+            }) ();
+    </script>
+
 
     <!-- Google tag (gtag.js) -->
     <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-KREDXFZ0C5"></script>
