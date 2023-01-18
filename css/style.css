@@ -273,6 +273,11 @@ h6 {
     font-size: smaller;
 }
 
+.disclaimer {
+    text-align: center;
+    font-size: 8px;
+}
+
 /* Menu */
 .menu-item {
     left: 0;
