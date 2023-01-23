@@ -269,6 +269,10 @@ h6 {
     margin: 0;
 }
 
+.highlight {
+    background-color: khaki;
+}
+
 .smaller {
     font-size: smaller;
 }
@@ -300,11 +304,12 @@ h6 {
 }
 
 a {
-    padding: 8px 8px 8px 16px;
+    /* padding: 0px 8px 0px 16px; */
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    color: #073980;
     /* transition: 0.3s; */
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: #073980 .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 .title-question:hover {
@@ -363,12 +368,12 @@ h2 {
     /* color: #859386; */
     color: #384004;
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 10px;
     padding-top: 10px;
     padding-left: 40px;
     padding-right: 40px;
     /* margin-top: 40px; */
-    margin: 80px auto 25px;
+    margin: 5px auto 25px;
     flex-grow: 1;
 }
 
@@ -505,6 +510,27 @@ li {
     display: block;
 }
 
+/* Buttons in left pane */
+#previous-button {
+    color: black;
+    font-size: 56px;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    /* margin-left: 2%; */
+    z-index: 1000;
+}
+
+#next-button {
+    color: black;
+    font-size: 56px;
+    position: fixed;
+    top: 50%;
+    right: calc(400px);
+    /* margin-right: 2%; */
+    z-index: 1000;
+}
+
 /* Card */
 .card-container {
     display: flex;
@@ -522,9 +548,9 @@ li {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    width: 55%;
-    min-width: 55%;
-    max-width: 55%;
+    width: 60%;
+    min-width: 60%;
+    max-width: 60%;
     /* width: 40%;
     min-width: 300px;
     max-width: 400px; */
