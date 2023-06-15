@@ -188,7 +188,8 @@ footer>p {
     top: 0;
     height: 100vh;
     min-height: 100vh;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     padding-top: 50px;
     text-align: left;
     cursor: pointer;
