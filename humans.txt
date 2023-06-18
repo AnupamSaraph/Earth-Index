@@ -1,9 +1,9 @@
-/_ Earth-Index _/
-Coder: Earth Index Volunteer Team
-Contact: earth.index.info [at] gmail.com
-Twitter: @Earth-Index
+/* TEAM */
+    Coder: Earth Index Volunteer Team
+    Contact: earth.index.info [at] gmail.com
+    Twitter: @Earth-Index
 
-/_ SITE _/
-Last update: 2023/06/15
-Language: English
-Doctype: HTML5
+/* SITE */
+    Last update: 2023/06/18
+    Language: English
+    Doctype: HTML5

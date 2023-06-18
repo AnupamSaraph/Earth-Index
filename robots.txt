@@ -1,3 +1,6 @@
+# Allow all web robots to access all pages
 User-agent: *
 Allow: /
+
+# Provide the location of the sitemap
 Sitemap: https://earth-index.info/sitemap.xml
