@@ -2,9 +2,10 @@
 
     <head>
         <meta charset="utf-8">
-                <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.clarity.ms https://www.googletagmanager.com https://fonts.googleapis.com/ 'sha256-PB14prDbgrEugEsMUHv0N27KHP/jOYE61vTd1LX2NAU=' 'sha256-n68AqlZdWLgf8i4U3zcav/0jvMP3d04Kcjc3hY8qi5k=' 'sha256-c2d5qa05NGXcgHRIBMvdmXcUZeZvdQK1bXt65QKaVnM=' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self'"> -->
-    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self';block-all-mixed-content;default-src 'self';script-src 'self' 'sha256-PB14prDbgrEugEsMUHv0N27KHP/jOYE61vTd1LX2NAU=' 'sha256-n68AqlZdWLgf8i4U3zcav/0jvMP3d04Kcjc3hY8qi5k=' 'report-sample' 'unsafe-inline' https://google-analytics.com https://googletagmanager.com https://ssl.google-analytics.com https://tagmanager.google.com https://www.google-analytics.com https://www.googletagmanager.com https://www.clarity.ms;style-src 'self' 'report-sample' fonts.googleapis.com tagmanager.google.com www.googletagmanager.com;object-src 'none';frame-src 'self' www.googletagmanager.com;child-src 'self' www.googletagmanager.com;img-src 'self' data: blob: *.clarity.ms *.google-analytics.com *.google.com fonts.gstatic.com www.googletagmanager.com;font-src 'self' data: fonts.googleapis.com fonts.gstatic.com;connect-src 'self' *.clarity.ms *.google.com fonts.gstatic.com fonts.googleapis.com stats.g.doubleclick.net www.google-analytics.com www.googletagmanager.com;manifest-src 'self';base-uri 'self';form-action 'self';media-src 'self';prefetch-src 'self';worker-src 'self';">
-    
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.clarity.ms https://www.googletagmanager.com https://fonts.googleapis.com/ 'sha256-PB14prDbgrEugEsMUHv0N27KHP/jOYE61vTd1LX2NAU=' 'sha256-n68AqlZdWLgf8i4U3zcav/0jvMP3d04Kcjc3hY8qi5k=' 'sha256-c2d5qa05NGXcgHRIBMvdmXcUZeZvdQK1bXt65QKaVnM=' 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE='; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src 'self'"> -->
+        <meta http-equiv="Content-Security-Policy"
+            content="frame-ancestors 'self';block-all-mixed-content;default-src 'self';script-src 'self' 'sha256-PB14prDbgrEugEsMUHv0N27KHP/jOYE61vTd1LX2NAU=' 'sha256-n68AqlZdWLgf8i4U3zcav/0jvMP3d04Kcjc3hY8qi5k=' 'report-sample' 'unsafe-inline' https://google-analytics.com https://googletagmanager.com https://ssl.google-analytics.com https://tagmanager.google.com https://www.google-analytics.com https://www.googletagmanager.com https://www.clarity.ms;style-src 'self' 'report-sample' fonts.googleapis.com tagmanager.google.com www.googletagmanager.com;object-src 'none';frame-src 'self' www.googletagmanager.com;child-src 'self' www.googletagmanager.com;img-src 'self' data: blob: *.clarity.ms *.google-analytics.com *.google.com fonts.gstatic.com www.googletagmanager.com;font-src 'self' data: fonts.googleapis.com fonts.gstatic.com;connect-src 'self' *.clarity.ms *.google.com fonts.gstatic.com fonts.googleapis.com stats.g.doubleclick.net www.google-analytics.com www.googletagmanager.com;manifest-src 'self';base-uri 'self';form-action 'self';media-src 'self';prefetch-src 'self';worker-src 'self';">
+
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Scoring liveability of Earth | Earth Index</title>
         <meta name="title" content="Earth Index: Scoring investments to liveability of Earth" />
@@ -44,7 +45,8 @@
         <link rel="icon" href="img/Earth-Index-Color.png" type="image/x-icon">
 
         <link rel="preload" as="style"
-            href="https://fonts.googleapis.com/css?family=Oswald:wght@200;300;400;500;600;700" as="font" crossorigin="anonymous">
+            href="https://fonts.googleapis.com/css?family=Oswald:wght@200;300;400;500;600;700" as="font"
+            crossorigin="anonymous">
         <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:wght@300;400;700"
             as="font" crossorigin="anonymous">
         <link
@@ -170,27 +172,28 @@
             }
         </script>
 
-    
-    <!-- Clarity tracking code for https://earth-index.info/ -->
-    <script>
-        (function (c, l, a, r, i, t, y) {
-            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
-            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
-            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "fgli30xo4b");
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KREDXFZ0C5"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-KREDXFZ0C5');
-    </script>
+        <!-- Clarity tracking code for https://earth-index.info/ -->
+        <script>
+            (function (c, l, a, r, i, t, y) {
+                c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+                t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i + "?ref=bwt";
+                y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+            })(window, document, "clarity", "script", "fgli30xo4b");
+        </script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KREDXFZ0C5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
 
-</head>
-<body>        <!-- Main Content -->
+            gtag('config', 'G-KREDXFZ0C5');
+        </script>
+
+    </head>
+
+    <body> <!-- Main Content -->
         <main>
             <!-- Header -->
             <header class="header">
@@ -252,8 +255,8 @@
                         <div class="w3-border-bottom w3-border-grey w3-white w3-leftbar w3-bar-item menu-description"
                             title="Lead the investment in liveability">
                             Lead the investment in liveability</div>
-                        <a class="w3-display-bottommiddle" href="index.html"><img float="left"
-                                src="img/Earth-Index-Color.png" height="60px" alt="Earth Index Logo`" /></a>
+                        <a class="center-image" href="index.html"><img src="img/Earth-Index-Color.png" height="60px"
+                                alt="Earth Index Logo`" /></a>
                     </div>
                 </nav>
                 </p>
